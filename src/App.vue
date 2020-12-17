@@ -17,7 +17,7 @@
 }
 
 #nav {
-  padding: 15px;
+  padding: 25px;
   text-align: right;
 
   a {
