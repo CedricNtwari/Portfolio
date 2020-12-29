@@ -1,9 +1,10 @@
+/* eslint-disable prettier/prettier */
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link>
     <router-link to="/works">Works</router-link>
     <router-link to="/blog">Blog</router-link>
     <router-link to="/contact">Contact</router-link>
+    <i class="fas fa-bars"></i>
   </div>
   <router-view />
 </template>
@@ -17,7 +18,7 @@
 }
 
 #nav {
-  padding: 25px;
+  width: 100%;
   text-align: right;
 
   a {
@@ -28,6 +29,15 @@
 
     &.router-link-exact-active {
       color: #ff7999;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 768px) {
+    a {
+      display: none;
+    }
+    i {
+      font-size: 30px;
     }
   }
 }
