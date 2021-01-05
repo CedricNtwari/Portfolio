@@ -14,7 +14,9 @@
 export default {
   name: 'Intro',
   props: {
-    msg: String,
+    msg: {
+      type: String,
+    },
   },
 }
 </script>

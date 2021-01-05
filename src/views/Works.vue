@@ -7,9 +7,10 @@
 
 <script>
 import Intro from '@/components/Intro.vue'
+
 export default {
-  name: 'Intro',
-  component: {
+  name: 'Works',
+  components: {
     Intro,
   },
 }
