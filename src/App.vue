@@ -19,13 +19,15 @@
 
 #nav {
   width: 100%;
+  margin: 0;
+  padding: 0;
   text-align: right;
 
   a {
     font-weight: bold;
     color: #2c3e50;
     text-decoration: none;
-    padding: 20px;
+    padding: 25px;
 
     &.router-link-exact-active {
       color: #ff7999;

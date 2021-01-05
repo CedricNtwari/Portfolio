@@ -43,6 +43,9 @@ export default {
   float: left;
   width: 50%;
 }
+.row {
+  margin: 10%;
+}
 
 /* Clear floats after the columns */
 .row:after {
@@ -63,7 +66,6 @@ img {
   border-radius: 50%;
   display: block;
   margin: auto;
-  margin-top: 50px;
 }
 @media (min-width: 320px) and (max-width: 768px) {
   .column {
