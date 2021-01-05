@@ -1,4 +1,5 @@
 <!-- This component adds a Intro to the homepage. -->
+<!-- https://www.npmjs.com/package/jspdf  jsdpf library-->
 <template>
   <div class="row">
     <div class="column">
@@ -8,7 +9,7 @@
         dignissimos, sequi nostrum eos sit, dolores veniam expedita incidunt iste ullam amet modi,
         itaque non. Optio, natus quas.
       </p>
-      <button>Download resume</button>
+      <button @click="download">Download resume</button>
     </div>
     <div class="column">
       <img alt="My picture" src="../assets/bb.png" />
@@ -17,11 +18,19 @@
 </template>
 
 <script>
+import jspdf from 'jspdf'
 export default {
   name: 'Intro',
   props: {
     msg: {
       type: String,
+    },
+  },
+  methods: {
+    download() {
+      const doc = new jspdf()
+      doc.text('Hello world!', 10, 10)
+      doc.save('resume.pdf')
     },
   },
 }
