@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 <template>
   <div id="nav">
-    <router-link to="/works">Works</router-link>
+    <router-link to="/">Works</router-link>
     <router-link to="/blog">Blog</router-link>
     <router-link to="/contact">Contact</router-link>
     <i class="fas fa-bars"></i>
@@ -19,13 +19,15 @@
 
 #nav {
   width: 100%;
+  margin: 0;
+  padding: 0;
   text-align: right;
 
   a {
     font-weight: bold;
     color: #2c3e50;
     text-decoration: none;
-    padding: 20px;
+    padding: 25px;
 
     &.router-link-exact-active {
       color: #ff7999;
