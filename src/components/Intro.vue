@@ -41,11 +41,11 @@ export default {
 <style scoped lang="scss">
 .intro {
   display: flex;
+  flex-wrap: wrap;
   margin: 10%;
 
   &__column {
-    float: left;
-    width: 50%;
+    flex: 50%;
   }
 
   button {
@@ -62,11 +62,11 @@ export default {
     display: block;
     margin: auto;
   }
-}
 
-@media (min-width: 320px) and (max-width: 768px) {
-  .intro__column {
-    width: 100%;
+  @media (min-width: 320px) and (max-width: 768px) {
+    &__column {
+      flex-basis: 100%;
+    }
   }
 }
 </style>
