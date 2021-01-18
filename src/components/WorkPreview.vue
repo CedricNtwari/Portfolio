@@ -1,10 +1,10 @@
 <!-- This component adds a WorkPreview to the homepage. -->
 <template>
-  <div class="row">
-    <div class="column">
+  <div class="work-preview">
+    <div class="work-preview__column">
       <img alt="My work picture" src="" />
     </div>
-    <div class="column">
+    <div class="work-preview__column">
       <h1>{{ title }}</h1>
       <small>{{ infos }}{{ infos1 }} </small>
       <p>

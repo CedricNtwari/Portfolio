@@ -1,19 +1,23 @@
 <!-- This component adds the footer. -->
 <template>
-  <div class="icons">
+  <div class="footer">
     <i class="fab fa-facebook-square"></i>
     <i class="fab fa-instagram-square"></i>
     <i class="fab fa-twitter-square"></i>
     <i class="fab fa-linkedin"></i>
-  </div>
-  <div class="copyright">
-    <p>Copyright @2021 All rights reserved</p>
+
+    <p class="footer__copyright">Copyright @{{ currentYear }} All rights reserved</p>
   </div>
 </template>
 
 <script>
 export default {
   name: 'Footer',
+  data() {
+    return {
+      currentYear: new Date().getFullYear(),
+    }
+  },
 }
 </script>
 
