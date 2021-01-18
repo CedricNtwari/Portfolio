@@ -40,17 +40,14 @@ export default {
 <!-- IE10 and down do not support flex -->
 <style scoped lang="scss">
 .intro {
+  display: flex;
   margin: 10%;
+
   &__column {
     float: left;
     width: 50%;
   }
   /* Clear floats after the columns */
-  &__:after {
-    content: '';
-    display: table;
-    clear: both;
-  }
   button {
     background-color: #ff7999;
     color: white;
@@ -60,7 +57,7 @@ export default {
   }
   img {
     width: 40%;
-    height: 40%;
+    height: 60%;
     border-radius: 50%;
     display: block;
     margin: auto;
