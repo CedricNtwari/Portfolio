@@ -6,13 +6,18 @@
     <i class="fab fa-twitter-square"></i>
     <i class="fab fa-linkedin"></i>
 
-    <p class="footer__copyright">Copyright @2021 All rights reserved</p>
+    <p class="footer__copyright">Copyright @{{ currentYear }} All rights reserved</p>
   </div>
 </template>
 
 <script>
 export default {
   name: 'Footer',
+  data() {
+    return {
+      currentYear: new Date().getFullYear(),
+    }
+  },
 }
 </script>
 
