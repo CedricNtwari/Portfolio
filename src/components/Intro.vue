@@ -47,7 +47,7 @@ export default {
     float: left;
     width: 50%;
   }
-  /* Clear floats after the columns */
+
   button {
     background-color: #ff7999;
     color: white;
