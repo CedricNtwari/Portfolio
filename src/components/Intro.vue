@@ -55,9 +55,11 @@ export default {
     padding: 15px;
     cursor: pointer;
   }
+
   img {
-    width: 40%;
-    height: 60%;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     border-radius: 50%;
     display: block;
     margin: auto;
