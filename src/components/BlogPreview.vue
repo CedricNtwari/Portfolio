@@ -1,32 +1,32 @@
 <!-- This component adds a BlogPreview to the homepage. -->
 <template>
-    <div class="blog-preview">
-        <h1 class="blog-preview__title">{{ title }}</h1>
-        <div class="blog-preview__infos">
-            <small>{{ infos }} | {{ infos1 }} </small>
-        </div>
-        <p class="blog-preview__para">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A reprehenderit optio hic
-            ullam temporibus aperiam consequuntur alias odio cupiditate praesentium maiores, ipsa
-            neque? Blanditiis, aperiam placeat. Quasi nihil reprehenderit ab?
-        </p>
+  <div class="blog-preview">
+    <h1 class="blog-preview__title">{{ title }}</h1>
+    <div class="blog-preview__infos">
+      <small>{{ infos }} | {{ infos1 }} </small>
     </div>
+    <p class="blog-preview__paragraph">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. A reprehenderit optio hic ullam
+      temporibus aperiam consequuntur alias odio cupiditate praesentium maiores, ipsa neque?
+      Blanditiis, aperiam placeat. Quasi nihil reprehenderit ab?
+    </p>
+  </div>
 </template>
 
 <script>
 export default {
-    name: 'BlogPreview',
-    props: {
-        title: {
-            type: String,
-        },
-        infos: {
-            type: String,
-        },
-        infos1: {
-            type: String,
-        },
+  name: 'BlogPreview',
+  props: {
+    title: {
+      type: String,
     },
+    infos: {
+      type: String,
+    },
+    infos1: {
+      type: String,
+    },
+  },
 }
 </script>
 ^

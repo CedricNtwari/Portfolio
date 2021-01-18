@@ -1,6 +1,6 @@
 <!-- This component creates a responsive navigation bar. -->
 <template>
-    <nav></nav>
+  <nav></nav>
 </template>
 
 <script></script>
