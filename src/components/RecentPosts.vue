@@ -40,17 +40,30 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0 10% 0 10%;
+  }
+  &__header h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
+      Geneva, Verdana, sans-serif;
+    font-size: 30px;
   }
 
   &__header a {
     text-decoration: none;
     color: #1e81b0;
   }
-}
-@media (min-width: 320px) and (max-width: 768px) {
-  .recent-posts {
+
+  &__blogPreview {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 7% 0 7%;
+  }
+
+  @media (min-width: 320px) and (max-width: 768px) {
+    &__blogPreview {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 }
 </style>

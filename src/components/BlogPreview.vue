@@ -29,10 +29,16 @@ export default {
   },
 }
 </script>
-^
+
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.blogPreview {
+.blog-preview {
+  margin: 20px;
+  padding: 20px;
   background-color: white;
+  cursor: pointer;
+}
+.blog-preview:hover {
+  color: #1e81b0;
 }
 </style>
