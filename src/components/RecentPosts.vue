@@ -7,15 +7,12 @@
     </div>
     <div class="recent-posts__blogPreview">
       <BlogPreview
-        title="Making a design from from scratch"
-        infos="12 Feb 2020"
-        infos1="Design, Pattern"
-      />
-      <BlogPreview
-        title="Creating pixel perfect icons in Figma"
-        infos="12 Feb 2020"
-        infos1="Figma, Icon Design"
-      />
+        v-for="blog in blogs"
+        v-bind:key="blog.id"
+        v-bind:title="blog.title"
+        v-bind:infos="blog.infos"
+        v-bind:infos1="blog.infos1"
+      ></BlogPreview>
     </div>
   </div>
 </template>
@@ -27,6 +24,24 @@ export default {
   name: 'RecentPosts',
   components: {
     BlogPreview,
+  },
+  data() {
+    return {
+      blogs: [
+        {
+          id: 1,
+          title: 'Making a design from from scratch',
+          infos: '12 Feb 2020',
+          infos1: 'Design, Pattern',
+        },
+        {
+          id: 2,
+          title: 'Creating pixel perfect icons in Figma',
+          infos: '12 Feb 2020',
+          infos1: 'Figma, Icon Design',
+        },
+      ],
+    }
   },
 }
 </script>
