@@ -1,6 +1,6 @@
 <template>
   <div class="works">
-    <Intro msg="Hi, I am Cédric, a creative front-end developer" />
+    <Intro :msg="introMsg" />
     <RecentPosts />
   </div>
 </template>
@@ -14,6 +14,12 @@ export default {
   components: {
     Intro,
     RecentPosts,
+  },
+
+  data() {
+    return {
+      introMsg: 'Hi, I am Cédric, a creative front-end developer',
+    }
   },
 }
 </script>
