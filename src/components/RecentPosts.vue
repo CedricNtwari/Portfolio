@@ -1,9 +1,9 @@
-<!-- This component creates a responsive navigation bar. -->
+<!-- This component creates a RecentPosts to the homepage. -->
 <template>
   <div class="recent-posts">
     <div class="recent-posts__header">
-      <h3>Recent posts</h3>
-      <a href="/blog">View all</a>
+      <h3 class="recent-posts__header--title">Recent posts</h3>
+      <router-link class="recent-posts__header--link" to="/blog">View all</router-link>
     </div>
     <div class="recent-posts__blogPreview">
       <BlogPreview
@@ -41,16 +41,17 @@ export default {
     flex-direction: row;
     justify-content: space-between;
     margin: 0 10% 0 10%;
-  }
-  &__header h3 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
-      Geneva, Verdana, sans-serif;
-    font-size: 30px;
-  }
 
-  &__header a {
-    text-decoration: none;
-    color: #1e81b0;
+    &--title {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
+        Geneva, Verdana, sans-serif;
+      font-size: 30px;
+    }
+
+    &--link {
+      text-decoration: none;
+      color: #1e81b0;
+    }
   }
 
   &__blogPreview {
