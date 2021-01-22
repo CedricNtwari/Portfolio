@@ -3,16 +3,16 @@
 <template>
   <div class="intro">
     <div class="intro__column">
-      <h1 class="intro__column--header">{{ msg }}</h1>
-      <p class="intro__column--paragraph">
+      <h1 class="intro__column-header">{{ msg }}</h1>
+      <p class="intro__column-paragraph">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum maiores cupiditate ipsam
         dignissimos, sequi nostrum eos sit, dolores veniam expedita incidunt iste ullam amet modi,
         itaque non. Optio, natus quas.
       </p>
-      <button class="intro__column--button" @click="download">Download resume</button>
+      <button class="intro__column-button" @click="download">Download resume</button>
     </div>
     <div class="intro__column">
-      <img class="intro__column--image" alt="My picture" src="../assets/bb.png" />
+      <img class="intro__column-image" alt="My picture" src="../assets/bb.png" />
     </div>
   </div>
 </template>
@@ -47,7 +47,7 @@ export default {
   &__column {
     flex: 50%;
 
-    &--button {
+    &-button {
       background-color: #ff7999;
       color: white;
       border: none;
@@ -55,7 +55,7 @@ export default {
       cursor: pointer;
     }
 
-    &--image {
+    &-image {
       width: 100%;
       max-width: 300px;
       height: auto;
