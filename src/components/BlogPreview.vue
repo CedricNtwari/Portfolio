@@ -1,11 +1,12 @@
 <!-- This component adds a BlogPreview to the homepage. -->
 <template>
-  <div class="blog-preview">
-    <h1 class="blog-preview__title">{{ title }}</h1>
-    <div class="blog-preview__infos">
-      <small>{{ infos }} | {{ infos1 }} </small>
+  <div class="blogpreview">
+    <h1 class="blogpreview-title">{{ title }}</h1>
+    <div class="blogpreview__infos">
+      <small class="blogpreview__infos-date">{{ date }}</small> |
+      <small class="blogpreview__infos-subject">{{ subject }}</small>
     </div>
-    <p class="blog-preview__paragraph">
+    <p class="blogpreview-paragraph">
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. A reprehenderit optio hic ullam
       temporibus aperiam consequuntur alias odio cupiditate praesentium maiores, ipsa neque?
       Blanditiis, aperiam placeat. Quasi nihil reprehenderit ab?
@@ -20,10 +21,10 @@ export default {
     title: {
       type: String,
     },
-    infos: {
+    date: {
       type: String,
     },
-    infos1: {
+    subject: {
       type: String,
     },
   },
@@ -32,7 +33,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.blog-preview {
+.blogpreview {
   margin: 20px;
   padding: 20px;
   background-color: white;
@@ -40,6 +41,17 @@ export default {
 
   &:hover {
     color: #1e81b0;
+  }
+
+  &__infos {
+    // eslint-disable-next-line prettier/prettier
+
+    &-date {
+      padding-right: 40px;
+    }
+    &-subject {
+      padding-left: 40px;
+    }
   }
 }
 </style>
