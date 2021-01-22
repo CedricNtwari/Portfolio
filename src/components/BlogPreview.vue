@@ -37,8 +37,9 @@ export default {
   padding: 20px;
   background-color: white;
   cursor: pointer;
-}
-.blog-preview:hover {
-  color: #1e81b0;
+
+  &:hover {
+    color: #1e81b0;
+  }
 }
 </style>
