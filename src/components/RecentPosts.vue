@@ -2,8 +2,8 @@
 <template>
   <div class="recent-posts">
     <div class="recent-posts__header">
-      <h3 class="recent-posts__header-title">Recent posts</h3>
-      <router-link class="recent-posts__header-link" to="/blog">View all</router-link>
+      <h3 class="recent-posts__title">Recent posts</h3>
+      <router-link class="recent-posts__link" to="/blog">View all</router-link>
     </div>
     <div class="recent-posts__blogPreview">
       <BlogPreview
@@ -56,17 +56,16 @@ export default {
     flex-direction: row;
     justify-content: space-between;
     margin: 0 10% 0 10%;
-
-    &-title {
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
-        Geneva, Verdana, sans-serif;
-      font-size: 30px;
-    }
-    &-link {
-      text-decoration: none;
-      color: #1e81b0;
-      padding: 40px 0;
-    }
+  }
+  &__title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
+      Geneva, Verdana, sans-serif;
+    font-size: 30px;
+  }
+  &__link {
+    text-decoration: none;
+    color: #1e81b0;
+    padding: 40px 0;
   }
 
   &__blogPreview {

@@ -2,12 +2,12 @@
 <template>
   <div class="work-preview">
     <div class="work-preview__column">
-      <img alt="My work picture" src="" />
+      <img class="work-preview__image" /> alt="My work picture" src="" />
     </div>
     <div class="work-preview__column">
-      <h1>{{ title }}</h1>
-      <small>{{ infos }}{{ infos1 }} </small>
-      <p>
+      <h1 class="work-preview__header">>{{ title }}</h1>
+      <small class="work-preview__details">>{{ year }}{{ subject }} </small>
+      <p class="work-preview__paragraph">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. A reprehenderit optio hic ullam
         temporibus aperiam consequuntur alias odio cupiditate praesentium maiores, ipsa neque?
         Blanditiis, aperiam placeat. Quasi nihil reprehenderit ab?
@@ -23,10 +23,10 @@ export default {
     title: {
       type: String,
     },
-    infos: {
+    year: {
       type: String,
     },
-    infos1: {
+    subject: {
       type: String,
     },
   },

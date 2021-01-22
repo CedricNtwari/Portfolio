@@ -6,7 +6,7 @@
       <small class="blog-preview__date">{{ date }}</small> |
       <small class="blog-preview__subject">{{ subject }}</small>
     </div>
-    <p class="blog-preview-paragraph">
+    <p class="blog-preview__paragraph">
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. A reprehenderit optio hic ullam
       temporibus aperiam consequuntur alias odio cupiditate praesentium maiores, ipsa neque?
       Blanditiis, aperiam placeat. Quasi nihil reprehenderit ab?
