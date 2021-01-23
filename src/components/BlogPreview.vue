@@ -3,7 +3,8 @@
   <div class="blog-preview">
     <h1 class="blog-preview__title">{{ title }}</h1>
     <div class="blog-preview__infos">
-      <small>{{ infos }} | {{ infos1 }} </small>
+      <small class="blog-preview__date">{{ date }}</small> |
+      <small class="blog-preview__subject">{{ subject }}</small>
     </div>
     <p class="blog-preview__paragraph">
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. A reprehenderit optio hic ullam
@@ -20,15 +21,33 @@ export default {
     title: {
       type: String,
     },
-    infos: {
+    date: {
       type: String,
     },
-    infos1: {
+    subject: {
       type: String,
     },
   },
 }
 </script>
-^
+
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.blog-preview {
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  cursor: pointer;
+
+  &:hover {
+    color: #1e81b0;
+  }
+
+  &__date {
+    padding-right: 40px;
+  }
+  &__subject {
+    padding-left: 40px;
+  }
+}
+</style>
