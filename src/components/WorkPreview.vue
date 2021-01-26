@@ -2,12 +2,7 @@
 <template>
   <div class="work-preview">
     <div class="work-preview__column">
-      <img
-        class="work-preview__image"
-        alt="My work picture"
-        :src="image"
-        style="width:150px; height:150px;"
-      />
+      <img class="work-preview__image" alt="My work picture" :src="image" />
     </div>
     <div class="work-preview__column">
       <h1 class="work-preview__header">{{ title }}</h1>
@@ -43,4 +38,23 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.work-preview {
+  // eslint-disable-next-line prettier/prettier
+  display: flex;
+  flex-wrap: wrap;
+
+  &:hover {
+    border: 1px solid lightgray;
+  }
+
+  &__column {
+    flex: 50%;
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+</style>

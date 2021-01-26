@@ -26,21 +26,22 @@ export default {
       works: [
         {
           id: 1,
-          image: '../assets/dashboard.png',
+          image:
+            'https://3tllv348mk0t1s188m2qazuj-wpengine.netdna-ssl.com/wp-content/uploads/2020/04/GA-dash-v2-1024x539.jpg',
           title: 'Designing Dashboard',
           year: '2020',
           subject: 'Dashboard',
         },
         {
           id: 2,
-          image: '../assets/portrait.jpg',
+          image: 'https://i.pinimg.com/236x/7a/fb/b0/7afbb021606b85e51049b3968bedfe5b.jpg',
           title: 'Vibrant Portraits of 2020',
           year: '2018',
           subject: 'Illustration',
         },
         {
           id: 3,
-          image: '../assets/letterImage.jpg',
+          image: 'https://cdn1.flamp.ru/31acab38b92bdbb7889ecf6e1a5f1d5e_1920.jpg',
           title: '36 Days od Malayalam type',
           year: '2018',
           subject: 'Typography',
@@ -52,4 +53,8 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.featured-works {
+  margin: 0 10% 0 10%;
+}
+</style>
