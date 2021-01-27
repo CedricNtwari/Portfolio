@@ -45,7 +45,7 @@ export default {
   flex-wrap: wrap;
 
   &:hover {
-    border: 1px solid lightgray;
+    color: #1e81b0;
   }
 
   &__column {
@@ -56,5 +56,13 @@ export default {
     width: 100%;
     max-width: 400px;
   }
+}
+
+.work-preview::after {
+  display: inline-block;
+  content: '';
+  border-top: 1px solid lightgray;
+  width: 100%;
+  margin: 20px;
 }
 </style>
