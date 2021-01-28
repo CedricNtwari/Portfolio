@@ -56,12 +56,5 @@ export default {
 <style scoped lang="scss">
 .featured-works {
   margin: 0 10% 0 10%;
-
-  &__header {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
-      Geneva, Verdana, sans-serif;
-    font-size: 30px;
-    padding: 20px 0;
-  }
 }
 </style>
