@@ -56,6 +56,24 @@ export default {
     width: 100%;
     max-width: 400px;
   }
+
+  &__year {
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    font-size: 15px;
+  }
+  &__subject {
+    padding-left: 40px;
+    font-size: 15px;
+  }
+
+  @media (min-width: 320px) and (max-width: 768px) {
+    &__column {
+      flex-basis: 100%;
+    }
+  }
 }
 
 .work-preview::after {
