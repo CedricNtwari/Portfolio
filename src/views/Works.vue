@@ -2,21 +2,18 @@
   <div class="works">
     <Intro :msg="introMsg" />
     <RecentPosts />
-    <FeaturedWorks />
   </div>
 </template>
 
 <script>
 import Intro from '@/components/Intro.vue'
 import RecentPosts from '@/components/RecentPosts.vue'
-import FeaturedWorks from '@/components/FeaturedWorks.vue'
 
 export default {
   name: 'Works',
   components: {
     Intro,
     RecentPosts,
-    FeaturedWorks,
   },
 
   data() {
