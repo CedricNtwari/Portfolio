@@ -12,7 +12,7 @@
         :title="blog.title"
         :date="blog.date"
         :subject="blog.subject"
-      ></BlogPreview>
+      />
     </div>
   </div>
 </template>

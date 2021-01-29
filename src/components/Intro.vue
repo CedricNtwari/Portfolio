@@ -58,7 +58,6 @@ export default {
   &__image {
     width: 100%;
     max-width: 300px;
-    height: auto;
     border-radius: 50%;
     display: block;
     margin: auto;
