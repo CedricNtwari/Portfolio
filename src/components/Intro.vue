@@ -64,6 +64,9 @@ export default {
   }
 
   @media (min-width: 320px) and (max-width: 768px) {
+    display: flex;
+    flex-direction: column-reverse;
+
     &__column {
       flex-basis: 100%;
     }
