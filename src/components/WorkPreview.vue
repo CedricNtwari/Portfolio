@@ -6,8 +6,8 @@
     </div>
     <div class="work-preview__column">
       <h1 class="work-preview__header">{{ title }}</h1>
-      <small class="work-preview__year">{{ year }}</small>
-      <small class="work-preview__subject">{{ subject }}</small>
+      <span class="work-preview__year">{{ year }}</span>
+      <span class="work-preview__subject">{{ subject }}</span>
       <p class="work-preview__paragraph">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. A reprehenderit optio hic ullam
         temporibus aperiam consequuntur alias odio cupiditate praesentium maiores, ipsa neque?
@@ -23,9 +23,12 @@ export default {
   props: {
     image: {
       type: String,
+      required: true,
+      default: '../assets/letterImage.png',
     },
     title: {
       type: String,
+      required: true,
     },
     year: {
       type: String,
@@ -78,12 +81,14 @@ export default {
     padding-left: 40px;
     font-size: 15px;
   }
+
   @media (min-width: 320px) and (max-width: 768px) {
     &__column {
       flex-basis: 100%;
     }
   }
 }
+
 .work-preview::after {
   display: inline-block;
   content: '';
