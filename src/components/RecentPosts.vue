@@ -7,6 +7,7 @@
     </div>
     <div class="recent-posts__blogPreview">
       <BlogPreview
+        class="recent-posts__content"
         v-for="blog in blogs"
         :key="blog.id"
         :title="blog.title"
@@ -71,6 +72,11 @@ export default {
     display: flex;
     flex-direction: row;
     margin: 0 7% 0 7%;
+  }
+
+  &__content {
+    margin: 20px;
+    padding: 20px;
   }
 
   @media (min-width: 320px) and (max-width: 768px) {

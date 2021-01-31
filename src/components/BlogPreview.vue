@@ -34,8 +34,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .blog-preview {
-  margin: 20px;
-  padding: 20px;
   background-color: white;
   cursor: pointer;
   font-family: Avenir, Helvetica, Arial, sans-serif;
