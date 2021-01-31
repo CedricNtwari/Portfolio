@@ -43,6 +43,7 @@ export default {
   display: flex;
   flex-wrap: wrap;
   margin: 10%;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 
   &__column {
     flex: 50%;

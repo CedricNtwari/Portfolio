@@ -58,8 +58,7 @@ export default {
     margin: 0 10% 0 10%;
   }
   &__title {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
-      Geneva, Verdana, sans-serif;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
     font-size: 30px;
   }
   &__link {

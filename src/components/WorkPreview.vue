@@ -48,6 +48,7 @@ export default {
   flex-wrap: wrap;
   align-items: stretch;
   cursor: pointer;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 
   &:hover {
     color: #1e81b0;

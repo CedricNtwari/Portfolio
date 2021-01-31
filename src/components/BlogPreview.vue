@@ -38,6 +38,7 @@ export default {
   padding: 20px;
   background-color: white;
   cursor: pointer;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 
   &:hover {
     color: #1e81b0;
