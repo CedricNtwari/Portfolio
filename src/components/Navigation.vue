@@ -1,8 +1,9 @@
 <!-- This component creates a responsive navigation bar. -->
 <template>
   <div id="App" class="navigation">
-    <router-link class="navigation__link" to="/">Works</router-link>
+    <router-link class="navigation__link" to="/">Home</router-link>
     <router-link class="navigation__link" to="/blog">Blog</router-link>
+    <router-link class="navigation__link" to="/works">Works</router-link>
     <router-link class="navigation__link" to="/contact">Contact</router-link>
     <div class="navigation__icon">
       <span class="navigation__bar"></span>
@@ -12,7 +13,16 @@
   </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  name: 'Navigation',
+  data() {
+    return {
+      isActive: true,
+    }
+  },
+}
+</script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
