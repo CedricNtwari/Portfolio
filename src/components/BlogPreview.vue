@@ -3,8 +3,8 @@
   <div class="blog-preview">
     <h1 class="blog-preview__title">{{ title }}</h1>
     <div class="blog-preview__infos">
-      <small class="blog-preview__date">{{ date }}</small> |
-      <small class="blog-preview__subject">{{ subject }}</small>
+      <span class="blog-preview__date">{{ date }}</span> |
+      <span class="blog-preview__subject">{{ subject }}</span>
     </div>
     <p class="blog-preview__paragraph">
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. A reprehenderit optio hic ullam
@@ -34,10 +34,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .blog-preview {
-  margin: 20px;
-  padding: 20px;
   background-color: white;
   cursor: pointer;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 
   &:hover {
     color: #1e81b0;

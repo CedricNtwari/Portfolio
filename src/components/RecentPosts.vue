@@ -7,12 +7,13 @@
     </div>
     <div class="recent-posts__blogPreview">
       <BlogPreview
+        class="recent-posts__content"
         v-for="blog in blogs"
         :key="blog.id"
         :title="blog.title"
         :date="blog.date"
         :subject="blog.subject"
-      ></BlogPreview>
+      />
     </div>
   </div>
 </template>
@@ -58,8 +59,7 @@ export default {
     margin: 0 10% 0 10%;
   }
   &__title {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
-      Geneva, Verdana, sans-serif;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
     font-size: 30px;
   }
   &__link {
@@ -72,6 +72,11 @@ export default {
     display: flex;
     flex-direction: row;
     margin: 0 7% 0 7%;
+  }
+
+  &__content {
+    margin: 20px;
+    padding: 20px;
   }
 
   @media (min-width: 320px) and (max-width: 768px) {

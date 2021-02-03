@@ -1,12 +1,20 @@
 <!-- This component adds the footer. -->
 <template>
   <div class="footer">
-    <i class="fab fa-facebook-square"></i>
-    <i class="fab fa-instagram-square"></i>
-    <i class="fab fa-twitter-square"></i>
-    <i class="fab fa-linkedin"></i>
+    <div class="footer__row">
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"
+        ><i class="fab fa-instagram fa-3x"></i
+      ></a>
+      <a href="https://twitter.com/?lang=en" target="_blank"
+        ><i class="fab fa-twitter fa-3x"></i
+      ></a>
+      <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+    </div>
 
-    <p class="footer__copyright">Copyright @{{ currentYear }} All rights reserved</p>
+    <div class="footer__row">
+      <p class="footer__copyright">Copyright @{{ currentYear }} All rights reserved</p>
+    </div>
   </div>
 </template>
 
@@ -22,4 +30,32 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.footer {
+  padding-top: 50px;
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fa-facebook,
+  .fa-instagram,
+  .fa-twitter,
+  .fa-linkedin {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+  }
+
+  .fa-facebook:hover,
+  .fa-instagram:hover,
+  .fa-twitter:hover,
+  .fa-linkedin:hover {
+    color: #1e81b0;
+  }
+}
+</style>

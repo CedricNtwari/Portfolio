@@ -43,6 +43,7 @@ export default {
   display: flex;
   flex-wrap: wrap;
   margin: 10%;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 
   &__column {
     flex: 50%;
@@ -58,13 +59,15 @@ export default {
   &__image {
     width: 100%;
     max-width: 300px;
-    height: auto;
     border-radius: 50%;
     display: block;
     margin: auto;
   }
 
   @media (min-width: 320px) and (max-width: 768px) {
+    display: flex;
+    flex-direction: column-reverse;
+
     &__column {
       flex-basis: 100%;
     }

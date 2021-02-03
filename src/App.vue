@@ -1,45 +1,17 @@
 /* eslint-disable prettier/prettier */
 <template>
-  <div id="nav">
-    <router-link to="/">Works</router-link>
-    <router-link to="/blog">Blog</router-link>
-    <router-link to="/contact">Contact</router-link>
-    <i class="fas fa-bars"></i>
-  </div>
+  <Navigation />
   <router-view />
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+<script>
+import Navigation from '@/components/Navigation.vue'
+
+export default {
+  name: 'App',
+  components: {
+    Navigation,
+  },
 }
-
-#nav {
-  margin: 0;
-  padding: 0;
-  text-align: right;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    text-decoration: none;
-    padding: 25px;
-
-    &.router-link-exact-active {
-      color: #ff7999;
-    }
-  }
-
-  @media (min-width: 320px) and (max-width: 768px) {
-    a {
-      display: none;
-    }
-    i {
-      font-size: 30px;
-    }
-  }
-}
-</style>
+</script>
+<style lang="scss"></style>
