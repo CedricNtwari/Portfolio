@@ -2,26 +2,23 @@
   <div class="works">
     <h1 class="works__header">{{ header }}</h1>
     <WorkPreview
-      class="works__workPreview"
       v-for="work in works"
+      class="works__workPreview"
       :key="work.id"
       :image="work.image"
       :title="work.title"
       :year="work.year"
       :subject="work.subject"
     />
-    <Footer class="works__footer" />
   </div>
 </template>
 
 <script>
-import Footer from '@/components/Footer.vue'
 import WorkPreview from '@/components/WorkPreview.vue'
 
 export default {
   name: 'Works',
   components: {
-    Footer,
     WorkPreview,
   },
 
@@ -84,12 +81,6 @@ export default {
 
   &__workPreview {
     padding: 20px;
-  }
-
-  &__footer {
-    position: block;
-    bottom: 0;
-    width: 100%;
   }
 }
 </style>
