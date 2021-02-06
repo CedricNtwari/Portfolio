@@ -1,8 +1,10 @@
 /* eslint-disable prettier/prettier */
 <template>
-  <Navigation />
-  <router-view />
-  <Footer />
+  <div class="app">
+    <Navigation class="app__navigation" />
+    <router-view class="app__router" />
+    <Footer class="app__footer" />
+  </div>
 </template>
 
 <script>
@@ -17,4 +19,14 @@ export default {
   },
 }
 </script>
-<style lang="scss"></style>
+<style lang="scss">
+.app {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+
+  &__router {
+    flex: 1;
+  }
+}
+</style>
