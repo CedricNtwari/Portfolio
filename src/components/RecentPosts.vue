@@ -85,5 +85,11 @@ export default {
       flex-wrap: wrap;
     }
   }
+  @media (min-width: 1300px) {
+    &__blogPreview {
+      width: 85%;
+      height: 40vh;
+    }
+  }
 }
 </style>
