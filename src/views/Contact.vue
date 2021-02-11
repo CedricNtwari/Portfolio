@@ -4,17 +4,34 @@
     <h6 class="contact__title">{{ title }}</h6>
     <form @submit.prevent="handleSubmit">
       <div class="contact__block">
-        <label class="contact__label" for="name">Name</label> <br />
-        <input class="contact__input" type="text" v-model="name" required />
+        <label class="contact__label" for="name">Name:</label>
+        <br />
+        <input
+          class="contact__input"
+          type="text"
+          v-model="name"
+          placeholder="Your name..."
+          required
+        />
         <div v-if="nameError" class="contact__error">{{ nameError }}</div>
       </div>
       <div class="contact__block">
-        <label class="contact__label" for="email">Email</label> <br />
-        <input class="contact__input" type="email" v-model="email" required />
+        <label class="contact__label" for="email">Email:</label> <br />
+        <input
+          class="contact__input"
+          type="email"
+          v-model="email"
+          placeholder="Your email address..."
+          required
+        />
       </div>
       <div class="contact__block">
-        <label class="contact__label" for="textarea">Message</label> <br />
-        <textarea class="contact__textarea" v-model="message"></textarea>
+        <label class="contact__label" for="textarea">Message:</label> <br />
+        <textarea
+          class="contact__textarea"
+          v-model="message"
+          placeholder="Your nmessage..."
+        ></textarea>
       </div>
       <div class="contact__button">
         <button>Send message</button>
@@ -30,7 +47,7 @@ export default {
   data() {
     return {
       header: 'Contact',
-      title: 'To get in touch fill the form below',
+      title: 'To get in touch fill the form below.',
       name: '',
       email: '',
       message: '',
@@ -50,6 +67,34 @@ export default {
 
 <style lang="scss">
 .contact {
+  margin: 20px;
+  padding: 20px;
+
+  &__header::after {
+    display: inline-block;
+    content: '';
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+  }
+
+  &__title {
+    color: gray;
+    font-size: 15px;
+  }
+  &__label::after {
+    content: '*';
+    color: red;
+  }
+
+  &__input {
+    height: 25px;
+    width: 100%;
+  }
+  &__textarea {
+    height: 50px;
+    width: 100%;
+  }
+
   &__error {
     color: red;
   }
