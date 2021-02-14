@@ -1,6 +1,7 @@
 /* eslint-disable prettier/prettier */
 <template>
   <div class="app">
+    <NavigationMobile class="app__navigationMobile" />
     <Navigation class="app__navigation" />
     <transition name="fade" mode="out-in">
       <router-view class="app__router" />
@@ -12,12 +13,14 @@
 <script>
 import Footer from '@/components/Footer.vue'
 import Navigation from '@/components/Navigation.vue'
+import NavigationMobile from '@/components/NavigationMobile.vue'
 
 export default {
   name: 'App',
   components: {
     Footer,
     Navigation,
+    NavigationMobile,
   },
 }
 </script>
