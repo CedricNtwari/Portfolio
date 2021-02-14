@@ -30,12 +30,10 @@
         <textarea
           class="contact__textarea"
           v-model="message"
-          placeholder="Your nmessage..."
+          placeholder="Your message..."
         ></textarea>
       </div>
-      <div class="contact__button">
-        <button>Send message</button>
-      </div>
+      <button class="contact__button">Send message</button>
     </form>
   </div>
 </template>
@@ -81,22 +79,38 @@ export default {
     color: gray;
     font-size: 15px;
   }
+
+  &__label {
+    font-weight: bold;
+  }
+
   &__label::after {
     content: '*';
     color: red;
+    font-weight: bold;
   }
 
   &__input {
     height: 25px;
     width: 100%;
+    margin-bottom: 20px;
   }
+
   &__textarea {
-    height: 50px;
+    height: 150px;
     width: 100%;
   }
 
   &__error {
     color: red;
+  }
+
+  &__button {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #ff7999;
+    color: white;
+    border: none;
   }
 }
 </style>
