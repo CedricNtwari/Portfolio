@@ -65,8 +65,7 @@ export default {
 
 <style lang="scss">
 .contact {
-  margin: 20px;
-  padding: 20px;
+  margin: 10%;
 
   &__header::after {
     display: inline-block;

@@ -2,7 +2,9 @@
 <template>
   <div class="app">
     <Navigation class="app__navigation" />
-    <router-view class="app__router" />
+    <transition name="fade" mode="out-in">
+      <router-view class="app__router" />
+    </transition>
     <Footer class="app__footer" />
   </div>
 </template>
@@ -27,6 +29,18 @@ export default {
 
   &__router {
     flex: 1;
+  }
+
+  .fade-enter-active,
+  .fade-leave-active {
+    transition-duration: 0.3s;
+    transition-property: opacity;
+    transition-timing-function: ease;
+  }
+
+  .fade-enter,
+  .fade-leave-active {
+    opacity: 0;
   }
 }
 </style>
