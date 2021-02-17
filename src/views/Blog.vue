@@ -2,26 +2,23 @@
   <div class="blog">
     <h1 class="blog__header">{{ header }}</h1>
     <BlogPreview
-      class="blog__BlogPreview"
       v-for="blog in blogs"
+      class="blog__BlogPreview"
       :key="blog.id"
       :title="blog.title"
       :date="blog.date"
       :subject="blog.subject"
     />
-    <Footer class="blog__footer" />
   </div>
 </template>
 
 <script>
 import BlogPreview from '@/components/BlogPreview.vue'
-import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'Blog',
   components: {
     BlogPreview,
-    Footer,
   },
 
   data() {
@@ -79,11 +76,6 @@ export default {
     display: inline-block;
     content: '';
     border-top: 1px solid lightgray;
-    width: 100%;
-  }
-  &__footer {
-    position: block;
-    bottom: 0;
     width: 100%;
   }
 }
