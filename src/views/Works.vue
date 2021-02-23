@@ -3,7 +3,7 @@
     <h1 class="works__header">{{ header }}</h1>
     <WorkPreview
       v-for="work in works"
-      class="works__workPreview"
+      class="works__work-preview"
       :key="work.id"
       :image="work.image"
       :title="work.title"
@@ -79,7 +79,7 @@ export default {
     padding-left: 38px;
   }
 
-  &__workPreview {
+  &__work-preview {
     padding: 20px;
   }
 }

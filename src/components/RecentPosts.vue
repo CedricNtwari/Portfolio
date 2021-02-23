@@ -5,7 +5,7 @@
       <h3 class="recent-posts__title">Recent posts</h3>
       <router-link class="recent-posts__link" to="/blog">View all</router-link>
     </div>
-    <div class="recent-posts__blogPreview">
+    <div class="recent-posts__blog-preview">
       <BlogPreview
         class="recent-posts__content"
         v-for="blog in blogs"
@@ -68,7 +68,7 @@ export default {
     padding: 40px 0;
   }
 
-  &__blogPreview {
+  &__blog-preview {
     display: flex;
     flex-direction: row;
     margin: 0 7% 0 7%;
@@ -80,13 +80,13 @@ export default {
   }
 
   @media (min-width: 320px) and (max-width: 768px) {
-    &__blogPreview {
+    &__blog-preview {
       display: flex;
       flex-wrap: wrap;
     }
   }
   @media (min-width: 1300px) {
-    &__blogPreview {
+    &__blog-preview {
       width: 85%;
       height: 40vh;
     }
