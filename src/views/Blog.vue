@@ -1,11 +1,12 @@
 <template>
   <div class="blog">
     <h1 class="blog__header">{{ header }}</h1>
-    <router-link :to="{ name: 'BlogDetails' /* , params: { id: blog.id } */ }"
+    <router-link
+      v-for="blog in blogs"
+      :key="blog.id"
+      :to="{ name: 'BlogDetails', params: { id: blog.id } }"
       ><BlogPreview
-        v-for="blog in blogs"
         class="blog__BlogPreview"
-        :key="blog.id"
         :title="blog.title"
         :date="blog.date"
         :subject="blog.subject"
