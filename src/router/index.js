@@ -4,7 +4,7 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: () => import(/* webpackChunkName: "home" */ '../views/Home.vue'),
+    component: () => import(/* webpackChunkName: "Home" */ '../views/Home.vue'),
   },
   {
     path: '/blog',
@@ -12,7 +12,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "blog" */ '../views/Blog.vue'),
+    component: () => import(/* webpackChunkName: "Blog" */ '../views/Blog.vue'),
   },
   {
     path: '/works',
@@ -20,17 +20,25 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "works" */ '../views/Works.vue'),
+    component: () => import(/* webpackChunkName: "Works" */ '../views/Works.vue'),
   },
   {
     path: '/contact',
     name: 'Contact',
-    component: () => import(/* webpackChunkName: "contact" */ '../views/Contact.vue'),
+    component: () => import(/* webpackChunkName: "Contact" */ '../views/Contact.vue'),
   },
   {
     path: '/details/:id',
     name: 'BlogDetails',
     component: () => import(/* webpackChunkName: "BlogDetails" */ '../views/BlogDetails.vue'),
+  },
+  {
+    path: '/:catchAll(.*)',
+    name: 'NotFound',
+    component: () => import(/* webpackChunkName: "NotFound" */ '../views/NotFound.vue'),
+    meta: {
+      requiresAuth: false,
+    },
   },
 ]
 

@@ -68,19 +68,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss">
-.works {
-  margin: 20px;
-  padding: 20px;
-
-  &__header {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    padding-left: 38px;
-  }
-
-  &__work-preview {
-    padding: 20px;
-  }
-}
-</style>
