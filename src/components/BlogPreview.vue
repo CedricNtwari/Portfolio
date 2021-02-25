@@ -16,7 +16,6 @@
 
 <script>
 export default {
-  name: 'BlogPreview',
   props: {
     title: {
       type: String,
