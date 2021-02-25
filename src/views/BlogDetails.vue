@@ -1,8 +1,6 @@
 <template>
   <div class="blog-details">
-    <div>
-      <button>Go back</button>
-    </div>
+    <GoBack />
     <h2>{{ blog.title }}</h2>
     <div class="blog-details__infos">
       <span class="blog-details__date">{{ blog.date }}</span> |
@@ -17,7 +15,13 @@
 </template>
 <script>
 import content from '@/content.js'
+import GoBack from '@/components/GoBack.vue'
+
 export default {
+  name: 'BlogDetails',
+  components: {
+    GoBack,
+  },
   data() {
     return {
       blogId: this.$route.params.id,
