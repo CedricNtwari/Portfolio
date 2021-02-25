@@ -1,5 +1,8 @@
 <template>
   <div class="blog-details">
+    <div>
+      <button>Go back</button>
+    </div>
     <h2>{{ blog.title }}</h2>
     <div class="blog-details__infos">
       <span class="blog-details__date">{{ blog.date }}</span> |
@@ -18,6 +21,7 @@ export default {
   data() {
     return {
       blogId: this.$route.params.id,
+      content,
     }
   },
   computed: {
