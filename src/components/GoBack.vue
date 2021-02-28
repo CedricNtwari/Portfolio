@@ -13,3 +13,15 @@ export default {
   },
 }
 </script>
+
+<style scoped lang="scss">
+.go-back {
+  &__button {
+    background-color: #ff7999;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+  }
+}
+</style>

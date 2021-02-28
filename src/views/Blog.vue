@@ -2,6 +2,7 @@
   <div class="blog">
     <h1 class="blog__header">{{ header }}</h1>
     <router-link
+      class="blog__link"
       v-for="blog in blogs"
       :key="blog.id"
       :to="{ name: 'BlogDetails', params: { id: blog.id } }"
@@ -68,6 +69,10 @@ export default {
   &__header {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     padding-left: 38px;
+  }
+
+  &__link {
+    text-decoration: none;
   }
 
   &__BlogPreview {

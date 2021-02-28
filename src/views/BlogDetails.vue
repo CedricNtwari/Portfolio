@@ -1,16 +1,12 @@
 <template>
   <div class="blog-details">
     <GoBack />
-    <h2>{{ blog.title }}</h2>
+    <h1>{{ blog.title }}</h1>
     <div class="blog-details__infos">
       <span class="blog-details__date">{{ blog.date }}</span> |
       <span class="blog-details__subject">{{ blog.subject }}</span>
     </div>
-    <p class="blog-details__paragraph">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. A reprehenderit optio hic ullam
-      temporibus aperiam consequuntur alias odio cupiditate praesentium maiores, ipsa neque?
-      Blanditiis, aperiam placeat. Quasi nihil reprehenderit ab?
-    </p>
+    <p class="blog-details__paragraph">{{ blog.paragraph }}</p>
   </div>
 </template>
 <script>
@@ -35,3 +31,21 @@ export default {
   },
 }
 </script>
+
+<style scoped lang="scss">
+.blog-details {
+  margin: 10%;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+
+  &__date {
+    font-variant: small-caps;
+  }
+  &__subject {
+    font-variant: small-caps;
+  }
+  &__paragraph::first-letter {
+    font-size: 200%;
+    color: #ff7999;
+  }
+}
+</style>
