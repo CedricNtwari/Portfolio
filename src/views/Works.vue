@@ -1,15 +1,19 @@
 <template>
   <div class="works">
     <h1 class="works__header">{{ header }}</h1>
-    <WorkPreview
+    <router-link
       v-for="work in works"
-      class="works__work-preview"
       :key="work.id"
-      :image="work.image"
-      :title="work.title"
-      :year="work.year"
-      :subject="work.subject"
-    />
+      :to="{ name: 'WorkDetails', params: { id: work.id } }"
+    >
+      <WorkPreview
+        class="works__work-preview"
+        :image="work.image"
+        :title="work.title"
+        :year="work.year"
+        :subject="work.subject"
+      />
+    </router-link>
   </div>
 </template>
 

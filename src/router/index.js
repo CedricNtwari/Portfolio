@@ -33,6 +33,11 @@ const routes = [
     component: () => import(/* webpackChunkName: "BlogDetails" */ '../views/BlogDetails.vue'),
   },
   {
+    path: '/job/:id',
+    name: 'WorkDetails',
+    component: () => import(/* webpackChunkName: "WorkDetails" */ '../views/WorkDetails.vue'),
+  },
+  {
     path: '/:catchAll(.*)',
     name: 'NotFound',
     component: () => import(/* webpackChunkName: "NotFound" */ '../views/NotFound.vue'),
