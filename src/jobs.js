@@ -48,6 +48,10 @@ export default {
       title: 'Vibrant Portraits of 2020',
       year: '2018',
       subject: 'Illustration',
+      paragraph:
+        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium nostrum minus ut, sunt' +
+        'corrupti aliquid voluptatibus aliquam dolore. Neque ea natus repellendus laboriosam, iure' +
+        'adipisci esse rem optio. Nulla, in?',
     },
     {
       id: '3',
@@ -55,6 +59,10 @@ export default {
       title: '36 Days od Malayalam type',
       year: '2018',
       subject: 'Typography',
+      paragraph:
+        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium nostrum minus ut, sunt' +
+        'corrupti aliquid voluptatibus aliquam dolore. Neque ea natus repellendus laboriosam, iure' +
+        'adipisci esse rem optio. Nulla, in?',
     },
     {
       id: '4',
@@ -63,6 +71,10 @@ export default {
       title: '36 Days od Malayalam type',
       year: '2018',
       subject: 'Typography',
+      paragraph:
+        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium nostrum minus ut, sunt' +
+        'corrupti aliquid voluptatibus aliquam dolore. Neque ea natus repellendus laboriosam, iure' +
+        'adipisci esse rem optio. Nulla, in?',
     },
     {
       id: '5',
@@ -70,6 +82,10 @@ export default {
       title: '36 Days od Malayalam type',
       year: '2018',
       subject: 'Typography',
+      paragraph:
+        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium nostrum minus ut, sunt' +
+        'corrupti aliquid voluptatibus aliquam dolore. Neque ea natus repellendus laboriosam, iure' +
+        'adipisci esse rem optio. Nulla, in?',
     },
   ],
 }
