@@ -51,6 +51,7 @@ export default {
 <style scoped lang="scss">
 .recent-posts {
   background-color: #e3edee;
+  width: 100vw;
 
   &__header {
     display: flex;
@@ -58,14 +59,17 @@ export default {
     justify-content: space-between;
     margin: 0 10% 0 10%;
   }
+
   &__title {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     font-size: 30px;
   }
+
   &__link {
     text-decoration: none;
     color: #1e81b0;
     padding: 40px 0;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
   }
 
   &__blog-preview {
@@ -83,12 +87,6 @@ export default {
     &__blog-preview {
       display: flex;
       flex-wrap: wrap;
-    }
-  }
-  @media (min-width: 1300px) {
-    &__blog-preview {
-      width: 85%;
-      height: 40vh;
     }
   }
 }
