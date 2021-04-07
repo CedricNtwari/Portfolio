@@ -27,7 +27,7 @@ export default {
     }
   },
   computed: {
-    blog() {
+    work() {
       return jobs.works.find(work => work.id === this.WorkId)
     },
   },

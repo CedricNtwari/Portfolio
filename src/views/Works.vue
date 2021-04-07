@@ -2,6 +2,7 @@
   <div class="works">
     <h1 class="works__header">{{ header }}</h1>
     <router-link
+      class="works__link"
       v-for="work in works"
       :key="work.id"
       :to="{ name: 'WorkDetails', params: { id: work.id } }"
@@ -72,3 +73,11 @@ export default {
   },
 }
 </script>
+<style lang="scss">
+.works {
+  &__link {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.893);
+  }
+}
+</style>
