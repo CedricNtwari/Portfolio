@@ -54,6 +54,7 @@ export default {
     color: white;
     border: none;
     padding: 15px;
+    margin-top: 30px;
     cursor: pointer;
   }
 
@@ -72,10 +73,6 @@ export default {
     &__column {
       flex-basis: 100%;
     }
-  }
-
-  @media (min-width: 768px) and (max-width: 1440px) {
-    flex-shrink: 0;
   }
 }
 </style>

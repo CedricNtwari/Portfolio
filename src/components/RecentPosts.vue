@@ -50,7 +50,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .recent-posts {
-  background-color: #e3edee;
+  background-color: #dbeef1;
   width: 100vw;
 
   &__header {
@@ -87,6 +87,12 @@ export default {
     &__blog-preview {
       display: flex;
       flex-wrap: wrap;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    &__blog-preview {
+      height: 350px;
     }
   }
 }

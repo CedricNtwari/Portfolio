@@ -81,6 +81,7 @@ export default {
   &__subject {
     padding-left: 40px;
     font-size: 15px;
+    color: grey;
   }
 
   @media (min-width: 320px) and (max-width: 768px) {

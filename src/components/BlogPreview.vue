@@ -48,6 +48,7 @@ export default {
   &__subject {
     padding-left: 40px;
     font-size: 15px;
+    color: grey;
   }
 }
 </style>
