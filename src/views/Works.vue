@@ -75,6 +75,7 @@ export default {
 </script>
 <style lang="scss">
 .works {
+  margin: 10%;
   &__link {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.893);

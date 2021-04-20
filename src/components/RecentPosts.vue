@@ -57,7 +57,7 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 10% 0 10%;
+    margin: 0 15% 0 15%;
   }
 
   &__title {
@@ -75,7 +75,7 @@ export default {
   &__blog-preview {
     display: flex;
     flex-direction: row;
-    margin: 0 7% 0 7%;
+    margin: 0 14% 0 14%;
   }
 
   &__content {

@@ -66,6 +66,7 @@ export default {
 
 <style lang="scss">
 .blog {
+  margin: 10%;
   &__header {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     padding-left: 38px;

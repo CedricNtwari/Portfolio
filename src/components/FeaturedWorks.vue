@@ -55,7 +55,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .featured-works {
-  margin: 0 10% 0 10%;
+  margin: 0 15% 0 15%;
 
   &__header {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',

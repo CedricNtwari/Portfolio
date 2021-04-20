@@ -42,8 +42,9 @@ export default {
 .intro {
   display: flex;
   flex-wrap: wrap;
-  margin: 10%;
+  margin: 15%;
   font-family: Avenir, Helvetica, Arial, sans-serif;
+  min-width: 300px;
 
   &__column {
     flex: 50%;
@@ -71,6 +72,10 @@ export default {
     &__column {
       flex-basis: 100%;
     }
+  }
+
+  @media (min-width: 768px) and (max-width: 1440px) {
+    flex-shrink: 0;
   }
 }
 </style>
