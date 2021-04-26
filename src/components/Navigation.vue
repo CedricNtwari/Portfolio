@@ -38,7 +38,7 @@ export default {
     font-weight: bold;
     color: #2c3e50;
     text-decoration: none;
-    padding: 20px 50px 0 0;
+    padding: 20px 0px 0 0;
 
     &.router-link-exact-active {
       color: #ff7999;
@@ -49,21 +49,21 @@ export default {
     }
 
     &:after {
-      background: none repeat scroll 0 0 transparent;
-      bottom: 0;
       content: '';
-      display: block;
-      height: 2px;
-      left: 0%;
       position: absolute;
-      background: #ff7999;
-      transition: width 0.3s ease 0s, left 0.3s ease 0s;
-      width: 0;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #ff7999;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
     }
 
     &:hover:after {
-      width: 50%;
-      left: 0;
+      transform: scaleX(1);
+      transform-origin: bottom left;
     }
   }
 
