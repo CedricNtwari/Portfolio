@@ -9,9 +9,12 @@
       <span class="work-preview__year">{{ year }}</span>
       <span class="work-preview__subject">{{ subject }}</span>
       <p class="work-preview__paragraph">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. A reprehenderit optio hic ullam
-        temporibus aperiam consequuntur alias odio cupiditate praesentium maiores, ipsa neque?
-        Blanditiis, aperiam placeat. Quasi nihil reprehenderit ab?
+        We are obviously huge fans and evangelists of Sketch, and that’s due to the amazing
+        functionality they have with symbols. But when you’re starting a system from scratch,
+        symbols might slow you down. Instead, start by getting your styles defined and organized. We
+        focus first on simply getting a good palette of colors and fonts, then we create layer
+        styles for UI controls. If you can get this done up front, this will ensure everything is
+        easy to update later. Once you’re ready to make components, we’ve got you covered.
       </p>
     </div>
   </div>

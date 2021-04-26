@@ -33,18 +33,38 @@ export default {
   text-align: right;
 
   &__link {
+    display: inline-block;
+    position: relative;
     font-weight: bold;
     color: #2c3e50;
     text-decoration: none;
-    padding: 20px 20px 0 50px;
+    padding: 20px 50px 0 0;
 
     &.router-link-exact-active {
       color: #ff7999;
     }
-  }
 
-  &__link:hover {
-    color: #1e81b0;
+    &:hover {
+      color: #1e81b0;
+    }
+
+    &:after {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: '';
+      display: block;
+      height: 2px;
+      left: 0%;
+      position: absolute;
+      background: #ff7999;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+
+    &:hover:after {
+      width: 50%;
+      left: 0;
+    }
   }
 
   @media (min-width: 320px) and (max-width: 768px) {

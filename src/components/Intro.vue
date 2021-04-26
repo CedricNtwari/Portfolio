@@ -5,9 +5,10 @@
     <div class="intro__column">
       <h1 class="intro__header">{{ msg }}</h1>
       <p class="intro__paragraph">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum maiores cupiditate ipsam
-        dignissimos, sequi nostrum eos sit, dolores veniam expedita incidunt iste ullam amet modi,
-        itaque non. Optio, natus quas.
+        Passionate about the web and front-end development in particular. I write code for a living
+        and I am also into open-source these days. Aside from coding I also help other developers
+        during one-to-one session online. I am active in the local developers community in my home
+        country Mauritius. I help organising meetups and speak there from time to time.
       </p>
       <button class="intro__button" @click="download">Download resume</button>
     </div>
