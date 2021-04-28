@@ -41,6 +41,12 @@ export default {
           date: '12 Feb 2020',
           subject: 'Figma, Icon Design',
         },
+        {
+          id: 3,
+          title: 'Creating pixel perfect icons in Figma',
+          date: '12 Feb 2020',
+          subject: 'Figma, Icon Design',
+        },
       ],
     }
   },
@@ -83,16 +89,21 @@ export default {
     padding: 20px;
   }
 
-  @media (min-width: 320px) and (max-width: 768px) {
+  @media (min-width: 320px) {
     &__blog-preview {
       display: flex;
       flex-wrap: wrap;
     }
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 900px) {
     &__blog-preview {
-      height: 350px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__content {
+      flex: 35%;
     }
   }
 }

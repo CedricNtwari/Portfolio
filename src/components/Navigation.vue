@@ -38,7 +38,7 @@ export default {
     font-weight: bold;
     color: #2c3e50;
     text-decoration: none;
-    padding: 20px 0px 0 0;
+    padding: 20px 50px 0 0;
 
     &.router-link-exact-active {
       color: #ff7999;
@@ -48,23 +48,23 @@ export default {
       color: #1e81b0;
     }
 
-    &:after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      transform: scaleX(0);
-      height: 2px;
-      bottom: 0;
-      left: 0;
-      background-color: #ff7999;
-      transform-origin: bottom right;
-      transition: transform 0.25s ease-out;
-    }
+    // &:after {
+    //   content: '';
+    //   position: absolute;
+    //   width: 100%;
+    //   transform: scaleX(0);
+    //   height: 2px;
+    //   bottom: 0;
+    //   left: 0;
+    //   background-color: #ff7999;
+    //   transform-origin: bottom right;
+    //   transition: transform 0.25s ease-out;
+    // }
 
-    &:hover:after {
-      transform: scaleX(1);
-      transform-origin: bottom left;
-    }
+    // &:hover:after {
+    //   transform: scaleX(1);
+    //   transform-origin: bottom left;
+    // }
   }
 
   @media (min-width: 320px) and (max-width: 768px) {
