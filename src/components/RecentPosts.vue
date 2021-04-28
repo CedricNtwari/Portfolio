@@ -106,5 +106,12 @@ export default {
       flex: 35%;
     }
   }
+
+  @media (min-width: 1200px) {
+    &__blog-preview {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+  }
 }
 </style>
