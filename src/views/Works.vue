@@ -79,6 +79,10 @@ export default {
   &__link {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.893);
+
+    &:hover {
+      color: #1e81b0;
+    }
   }
 }
 </style>

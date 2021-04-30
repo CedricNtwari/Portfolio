@@ -39,10 +39,6 @@ export default {
   cursor: pointer;
   font-family: Avenir, Helvetica, Arial, sans-serif;
 
-  &:hover {
-    color: #1e81b0;
-  }
-
   &__date {
     padding-right: 40px;
     font-size: 15px;

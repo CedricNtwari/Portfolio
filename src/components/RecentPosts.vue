@@ -31,7 +31,7 @@ export default {
       blogs: [
         {
           id: 1,
-          title: 'Making a design from from scratch',
+          title: 'Making a design from scratch',
           date: '12 Feb 2020',
           subject: 'Design, Pattern',
         },
