@@ -13,8 +13,9 @@
   </div>
 </template>
 <script>
-import jobs from '@/jobs.js'
+import jobs from '@/works.js'
 import GoBack from '@/components/GoBack.vue'
+
 export default {
   name: 'WorkDetails',
   components: {
@@ -23,13 +24,29 @@ export default {
   data() {
     return {
       workId: this.$route.params.id,
-      jobs,
     }
   },
   computed: {
     work() {
-      return jobs.works.find(work => work.id === this.WorkId)
+      return jobs.works.find(work => work.id === this.workId)
     },
   },
 }
 </script>
+
+<style scoped lang="scss">
+.work-details {
+  margin: 10%;
+
+  &__date {
+    font-variant: small-caps;
+  }
+  &__subject {
+    font-variant: small-caps;
+  }
+  &__paragraph::first-letter {
+    font-size: 200%;
+    color: #ff7999;
+  }
+}
+</style>

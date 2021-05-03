@@ -21,7 +21,6 @@ export default {
   data() {
     return {
       blogId: this.$route.params.id,
-      content,
     }
   },
   computed: {
@@ -35,7 +34,6 @@ export default {
 <style scoped lang="scss">
 .blog-details {
   margin: 10%;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
 
   &__date {
     font-variant: small-caps;

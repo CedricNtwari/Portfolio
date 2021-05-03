@@ -6,14 +6,19 @@
       <router-link class="recent-posts__link" to="/blog">View all</router-link>
     </div>
     <div class="recent-posts__blog-preview">
-      <BlogPreview
-        class="recent-posts__content"
+      <router-link
+        class="recent-posts__link"
         v-for="blog in blogs"
         :key="blog.id"
-        :title="blog.title"
-        :date="blog.date"
-        :subject="blog.subject"
-      />
+        :to="blog.routeUrl"
+        ><BlogPreview
+          class="recent-posts__content"
+          v-for="blog in blogs"
+          :key="blog.id"
+          :title="blog.title"
+          :date="blog.date"
+          :subject="blog.subject"
+      /></router-link>
     </div>
   </div>
 </template>
@@ -34,18 +39,21 @@ export default {
           title: 'Making a design from scratch',
           date: '12 Feb 2020',
           subject: 'Design, Pattern',
+          routeUrl: '/details/1',
         },
         {
           id: 2,
           title: 'Creating pixel perfect icons in Figma',
           date: '12 Feb 2020',
           subject: 'Figma, Icon Design',
+          routeUrl: '/details/2',
         },
         {
           id: 3,
           title: 'Creating pixel perfect icons in Figma',
           date: '12 Feb 2020',
           subject: 'Figma, Icon Design',
+          routeUrl: '/details/3',
         },
       ],
     }
