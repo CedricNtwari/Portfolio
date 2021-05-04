@@ -10,7 +10,7 @@
   </div>
 </template>
 <script>
-import content from '@/content.js'
+import { blogs } from '@/content.js'
 import GoBack from '@/components/GoBack.vue'
 
 export default {
@@ -25,7 +25,7 @@ export default {
   },
   computed: {
     blog() {
-      return content.blogs.find(blog => blog.id === this.blogId)
+      return blogs.find(blog => blog.id === this.blogId)
     },
   },
 }

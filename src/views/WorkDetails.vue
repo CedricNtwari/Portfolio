@@ -13,7 +13,7 @@
   </div>
 </template>
 <script>
-import jobs from '@/works.js'
+import { works } from '@/works.js'
 import GoBack from '@/components/GoBack.vue'
 
 export default {
@@ -28,7 +28,7 @@ export default {
   },
   computed: {
     work() {
-      return jobs.works.find(work => work.id === this.workId)
+      return works.find(work => work.id === this.workId)
     },
   },
 }
