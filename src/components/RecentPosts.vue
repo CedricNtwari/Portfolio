@@ -13,7 +13,6 @@
         :to="blog.routeUrl"
         ><BlogPreview
           class="recent-posts__content"
-          v-for="blog in blogs"
           :key="blog.id"
           :title="blog.title"
           :date="blog.date"
@@ -81,7 +80,6 @@ export default {
 
   &__link {
     text-decoration: none;
-    color: #1e81b0;
     padding: 40px 0;
     font-family: Avenir, Helvetica, Arial, sans-serif;
   }
@@ -93,6 +91,7 @@ export default {
   }
 
   &__content {
+    text-decoration: none;
     margin: 20px;
     padding: 20px;
   }

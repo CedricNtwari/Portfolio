@@ -2,14 +2,18 @@
 <template>
   <div class="featured-works">
     <h1 class="featured-works__header">Featured works</h1>
-    <WorkPreview
+    <router-link
+      class="featured-works__link"
       v-for="work in works"
       :key="work.id"
-      :image="work.image"
-      :title="work.title"
-      :year="work.year"
-      :subject="work.subject"
-    />
+      :to="work.routeUrl"
+      ><WorkPreview
+        :key="work.id"
+        :image="work.image"
+        :title="work.title"
+        :year="work.year"
+        :subject="work.subject"
+    /></router-link>
   </div>
 </template>
 
@@ -31,6 +35,7 @@ export default {
           title: 'Designing Dashboard',
           year: '2020',
           subject: 'Dashboard',
+          routeUrl: '/works/1',
         },
         {
           id: 2,
@@ -38,6 +43,7 @@ export default {
           title: 'Vibrant Portraits of 2020',
           year: '2018',
           subject: 'Illustration',
+          routeUrl: '/works/2',
         },
         {
           id: 3,
@@ -45,6 +51,7 @@ export default {
           title: '36 Days od Malayalam type',
           year: '2018',
           subject: 'Typography',
+          routeUrl: '/works/3',
         },
       ],
     }
@@ -62,6 +69,10 @@ export default {
       Geneva, Verdana, sans-serif;
     font-size: 30px;
     padding: 20px 0;
+  }
+
+  &__link {
+    text-decoration: none;
   }
 }
 </style>
