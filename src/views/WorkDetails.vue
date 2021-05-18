@@ -13,7 +13,7 @@
   </div>
 </template>
 <script>
-import { works } from '@/works.js'
+import { works } from '@/works-data.js'
 import GoBack from '@/components/GoBack.vue'
 
 export default {

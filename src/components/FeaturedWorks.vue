@@ -73,6 +73,11 @@ export default {
 
   &__link {
     text-decoration: none;
+    color: #000000;
+
+    &:hover {
+      color: #1e81b0;
+    }
   }
 }
 </style>

@@ -10,7 +10,7 @@
   </div>
 </template>
 <script>
-import { blogs } from '@/content.js'
+import { blogs } from '@/blogs-data.js'
 import GoBack from '@/components/GoBack.vue'
 
 export default {

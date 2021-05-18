@@ -6,56 +6,55 @@
       <router-link class="recent-posts__link" to="/blog">View all</router-link>
     </div>
     <div class="recent-posts__blog-preview">
-      <router-link
-        class="recent-posts__link"
-        v-for="blog in blogs"
+      <!-- <router-link class="recent-posts__preview-link" :key="blog.id"> -->
+      <BlogPreview
+        class="recent-posts__content"
+        v-for="blog in displayedBlogPosts"
         :key="blog.id"
-        :to="blog.routeUrl"
-        ><BlogPreview
-          class="recent-posts__content"
-          :key="blog.id"
-          :title="blog.title"
-          :date="blog.date"
-          :subject="blog.subject"
-      /></router-link>
+        :title="blog.title"
+        :date="blog.date"
+        :subject="blog.subject"
+      />
     </div>
   </div>
 </template>
 
 <script>
 import BlogPreview from '@/components/BlogPreview.vue'
+import { blogs } from '../blogs-data.js'
 
 export default {
   name: 'RecentPosts',
   components: {
     BlogPreview,
   },
+
   data() {
     return {
-      blogs: [
-        {
-          id: 1,
-          title: 'Making a design from scratch',
-          date: '12 Feb 2020',
-          subject: 'Design, Pattern',
-          routeUrl: '/blog/1',
-        },
-        {
-          id: 2,
-          title: 'Creating pixel perfect icons in Figma',
-          date: '12 Feb 2020',
-          subject: 'Figma, Icon Design',
-          routeUrl: '/blog/2',
-        },
-        {
-          id: 3,
-          title: 'Creating pixel perfect icons in Figma',
-          date: '12 Feb 2020',
-          subject: 'Figma, Icon Design',
-          routeUrl: '/blog/3',
-        },
-      ],
+      viewportWidth: 0,
+      blogs,
     }
+  },
+
+  created() {
+    window.addEventListener('resize', this.handleResize)
+    this.handleResize()
+  },
+
+  unmounted() {
+    window.removeEventListener('resize', this.handleResize)
+  },
+
+  methods: {
+    handleResize() {
+      this.viewportWidth = window.innerWidth
+    },
+  },
+
+  computed: {
+    displayedBlogPosts() {
+      return this.viewportWidth <= 1130 ? blogs.slice(0, 2) : blogs.slice(0, 3)
+    },
   },
 }
 </script>
@@ -94,6 +93,15 @@ export default {
     text-decoration: none;
     margin: 20px;
     padding: 20px;
+  }
+
+  &__preview-link {
+    text-decoration: none;
+    color: #000000;
+
+    &:hover {
+      color: #1e81b0;
+    }
   }
 
   @media (min-width: 320px) {
