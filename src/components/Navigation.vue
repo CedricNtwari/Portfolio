@@ -47,24 +47,6 @@ export default {
     &:hover {
       color: #1e81b0;
     }
-
-    // &:after {
-    //   content: '';
-    //   position: absolute;
-    //   width: 100%;
-    //   transform: scaleX(0);
-    //   height: 2px;
-    //   bottom: 0;
-    //   left: 0;
-    //   background-color: #ff7999;
-    //   transform-origin: bottom right;
-    //   transition: transform 0.25s ease-out;
-    // }
-
-    // &:hover:after {
-    //   transform: scaleX(1);
-    //   transform-origin: bottom left;
-    // }
   }
 
   @media (min-width: 320px) and (max-width: 768px) {
