@@ -7,11 +7,7 @@
       <span class="blog-preview__subject">{{ subject }}</span>
     </div>
     <p class="blog-preview__paragraph">
-      The journey to creating design systems starts with designing actual screens first. Think of it
-      like cooking. It wouldn’t make sense to get your ingredients out and food prepped without
-      having an idea of what you’re cooking. For design systems, this is even more important real
-      screens give you an idea of what you’ll end up needing the most, and what might not be so
-      important.
+      {{ text }}
     </p>
   </div>
 </template>
@@ -22,10 +18,16 @@ export default {
     title: {
       type: String,
     },
+
     date: {
       type: String,
     },
+
     subject: {
+      type: String,
+    },
+
+    text: {
       type: String,
     },
   },

@@ -14,6 +14,7 @@
         :title="blog.title"
         :date="blog.date"
         :subject="blog.subject"
+        :text="blog.text"
       />
     </div>
   </div>
