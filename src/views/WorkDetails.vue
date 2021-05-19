@@ -21,11 +21,13 @@ export default {
   components: {
     GoBack,
   },
+
   data() {
     return {
       workId: this.$route.params.id,
     }
   },
+
   computed: {
     work() {
       return works.find(work => work.id === this.workId)
@@ -41,9 +43,11 @@ export default {
   &__date {
     font-variant: small-caps;
   }
+
   &__subject {
     font-variant: small-caps;
   }
+
   &__paragraph::first-letter {
     font-size: 200%;
     color: #ff7999;

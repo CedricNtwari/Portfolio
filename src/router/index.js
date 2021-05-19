@@ -20,27 +20,27 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "Works" */ '../views/Works.vue'),
+    component: () => import(/* webpackChunkName: "works" */ '../views/Works.vue'),
   },
   {
     path: '/contact',
     name: 'Contact',
-    component: () => import(/* webpackChunkName: "Contact" */ '../views/Contact.vue'),
+    component: () => import(/* webpackChunkName: "contact" */ '../views/Contact.vue'),
   },
   {
     path: '/blog/:id',
     name: 'BlogDetails',
-    component: () => import(/* webpackChunkName: "BlogDetails" */ '../views/BlogDetails.vue'),
+    component: () => import(/* webpackChunkName: "blog-details" */ '../views/BlogDetails.vue'),
   },
   {
     path: '/works/:id',
     name: 'WorkDetails',
-    component: () => import(/* webpackChunkName: "WorkDetails" */ '../views/WorkDetails.vue'),
+    component: () => import(/* webpackChunkName: "work-details" */ '../views/WorkDetails.vue'),
   },
   {
     path: '/:catchAll(.*)',
     name: 'NotFound',
-    component: () => import(/* webpackChunkName: "NotFound" */ '../views/NotFound.vue'),
+    component: () => import(/* webpackChunkName: "not-found" */ '../views/NotFound.vue'),
     meta: {
       requiresAuth: false,
     },

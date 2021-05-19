@@ -18,11 +18,13 @@ export default {
   components: {
     GoBack,
   },
+
   data() {
     return {
       blogId: this.$route.params.id,
     }
   },
+
   computed: {
     blog() {
       return blogs.find(blog => blog.id === this.blogId)
@@ -38,9 +40,11 @@ export default {
   &__date {
     font-variant: small-caps;
   }
+
   &__subject {
     font-variant: small-caps;
   }
+
   &__paragraph::first-letter {
     font-size: 200%;
     color: #ff7999;

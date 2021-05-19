@@ -43,6 +43,7 @@ export default {
     padding-right: 40px;
     font-size: 15px;
   }
+
   &__subject {
     padding-left: 40px;
     font-size: 15px;
