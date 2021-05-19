@@ -11,12 +11,14 @@
         :title="blog.title"
         :date="blog.date"
         :subject="blog.subject"
+        :text="blog.text"
     /></router-link>
   </div>
 </template>
 
 <script>
 import BlogPreview from '@/components/BlogPreview.vue'
+import { blogs } from '../blogs-data.js'
 
 export default {
   name: 'Blog',
@@ -27,38 +29,7 @@ export default {
   data() {
     return {
       header: 'Blog',
-      blogs: [
-        {
-          id: 1,
-          title: 'Making a design from from scratch',
-          date: '12 Feb 2020',
-          subject: 'Design, Pattern',
-        },
-        {
-          id: 2,
-          title: 'Creating pixel perfect icons in Figma',
-          date: '12 Feb 2020',
-          subject: 'Figma, Icon Design',
-        },
-        {
-          id: 3,
-          title: 'Creating pixel perfect icons in Figma',
-          date: '12 Feb 2020',
-          subject: 'Figma, Icon Design',
-        },
-        {
-          id: 4,
-          title: 'Creating pixel perfect icons in Figma',
-          date: '12 Feb 2020',
-          subject: 'Figma, Icon Design',
-        },
-        {
-          id: 5,
-          title: 'Creating pixel perfect icons in Figma',
-          date: '12 Feb 2020',
-          subject: 'Figma, Icon Design',
-        },
-      ],
+      blogs,
     }
   },
 }

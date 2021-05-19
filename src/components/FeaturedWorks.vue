@@ -2,19 +2,18 @@
 <template>
   <div class="featured-works">
     <h1 class="featured-works__header">Featured works</h1>
-    <!-- <router-link
+    <router-link
       class="featured-works__link"
-      :key="work.id"
-      :to="work.routeUrl"
-      >--><WorkPreview
       v-for="work in displayedWorksPosts"
       :key="work.id"
-      :image="work.image"
-      :title="work.title"
-      :year="work.year"
-      :subject="work.subject"
-      >{{ displayedWorksPosts }}</WorkPreview
-    >
+      :to="{ name: 'WorkDetails', params: { id: work.id } }"
+      ><WorkPreview
+        :key="work.id"
+        :image="work.image"
+        :title="work.title"
+        :year="work.year"
+        :subject="work.subject"
+    /></router-link>
   </div>
 </template>
 

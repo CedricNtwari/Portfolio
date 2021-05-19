@@ -6,16 +6,20 @@
       <router-link class="recent-posts__link" to="/blog">View all</router-link>
     </div>
     <div class="recent-posts__blog-preview">
-      <!-- <router-link class="recent-posts__preview-link" :key="blog.id"> -->
-      <BlogPreview
-        class="recent-posts__content"
+      <router-link
+        class="recent-posts__preview-link"
         v-for="blog in displayedBlogPosts"
         :key="blog.id"
-        :title="blog.title"
-        :date="blog.date"
-        :subject="blog.subject"
-        :text="blog.text"
-      />
+        :to="{ name: 'BlogDetails', params: { id: blog.id } }"
+      >
+        <BlogPreview
+          class="recent-posts__content"
+          :key="blog.id"
+          :title="blog.title"
+          :date="blog.date"
+          :subject="blog.subject"
+          :text="blog.text"
+      /></router-link>
     </div>
   </div>
 </template>
@@ -54,7 +58,7 @@ export default {
 
   computed: {
     displayedBlogPosts() {
-      return this.viewportWidth <= 1130 ? blogs.slice(0, 2) : blogs.slice(0, 3)
+      return this.viewportWidth <= 1320 ? blogs.slice(0, 2) : blogs.slice(0, 3)
     },
   },
 }
@@ -123,7 +127,7 @@ export default {
     }
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1100px) {
     &__blog-preview {
       display: flex;
       flex-wrap: nowrap;

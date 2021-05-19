@@ -77,6 +77,7 @@ export const works = [
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium nostrum minus ut, sunt' +
       'corrupti aliquid voluptatibus aliquam dolore. Neque ea natus repellendus laboriosam, iure' +
       'adipisci esse rem optio. Nulla, in?',
+    routeUrl: '/works/4',
   },
   {
     id: '5',
@@ -88,5 +89,6 @@ export const works = [
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium nostrum minus ut, sunt' +
       'corrupti aliquid voluptatibus aliquam dolore. Neque ea natus repellendus laboriosam, iure' +
       'adipisci esse rem optio. Nulla, in?',
+    routeUrl: '/works/5',
   },
 ]
