@@ -30,6 +30,7 @@ import { blogs } from '../blogs-data.js'
 
 export default {
   name: 'RecentPosts',
+
   components: {
     BlogPreview,
   },
@@ -37,6 +38,7 @@ export default {
   data() {
     return {
       viewportWidth: 0,
+      viewportValue: '1320',
       blogs,
     }
   },
@@ -58,7 +60,7 @@ export default {
 
   computed: {
     displayedBlogPosts() {
-      return this.viewportWidth <= 1320 ? blogs.slice(0, 2) : blogs.slice(0, 3)
+      return this.viewportWidth <= this.viewportValue ? blogs.slice(0, 2) : blogs.slice(0, 3)
     },
   },
 }
@@ -92,12 +94,26 @@ export default {
     display: flex;
     flex-direction: row;
     margin: 0 14% 0 14%;
+
+    @media (min-width: 320px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @media (min-width: 1100px) {
+      display: flex;
+      flex-wrap: nowrap;
+    }
   }
 
   &__content {
     text-decoration: none;
     margin: 20px;
     padding: 20px;
+
+    @media (min-width: 900px) {
+      flex: 35%;
+    }
   }
 
   &__preview-link {
@@ -106,31 +122,6 @@ export default {
 
     &:hover {
       color: #1e81b0;
-    }
-  }
-
-  @media (min-width: 320px) {
-    &__blog-preview {
-      display: flex;
-      flex-wrap: wrap;
-    }
-  }
-
-  @media (min-width: 900px) {
-    &__blog-preview {
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    &__content {
-      flex: 35%;
-    }
-  }
-
-  @media (min-width: 1100px) {
-    &__blog-preview {
-      display: flex;
-      flex-wrap: nowrap;
     }
   }
 }

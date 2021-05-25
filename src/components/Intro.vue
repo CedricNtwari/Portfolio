@@ -47,9 +47,19 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   min-width: 300px;
 
+  @media (min-width: 320px) and (max-width: 768px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
   &__column {
     flex: 50%;
+
+    @media (min-width: 320px) and (max-width: 768px) {
+      flex-basis: 100%;
+    }
   }
+
   &__button {
     background-color: #ff7999;
     color: white;

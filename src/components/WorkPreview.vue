@@ -56,6 +56,10 @@ export default {
   &__column {
     flex: 50%;
     padding: 0 30px 0 0;
+
+    @media (min-width: 320px) and (max-width: 768px) {
+      flex-basis: 100%;
+    }
   }
 
   &__column:nth-child(1) {
@@ -81,12 +85,6 @@ export default {
     padding-left: 40px;
     font-size: 15px;
     color: grey;
-  }
-
-  @media (min-width: 320px) and (max-width: 768px) {
-    &__column {
-      flex-basis: 100%;
-    }
   }
 }
 
