@@ -1,8 +1,8 @@
 <template>
   <div class="not-found">
-    <h1 class="not-found__header">Not Found</h1>
+    <h1 class="not-found__header">{{ notfound }}</h1>
     <p class="not-found__parahraph">
-      Oops we couldn't find that page. Try going
+      {{ oops }}
       <router-link class="not-found__link" :to="{ name: 'Home' }">home</router-link>
     </p>
   </div>
@@ -10,6 +10,13 @@
 <script>
 export default {
   name: 'NotFound',
+
+  data() {
+    return {
+      notfound: 'Not Found',
+      oops: "Oops we couldn't find that page. Try going",
+    }
+  },
 }
 </script>
 

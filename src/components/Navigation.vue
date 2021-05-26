@@ -47,25 +47,25 @@ export default {
     &:hover {
       color: #1e81b0;
     }
+
+    @media (min-width: 320px) and (max-width: 768px) {
+      display: none;
+    }
   }
 
-  @media (min-width: 320px) and (max-width: 768px) {
-    .navigation {
-      &__link {
-        display: none;
-      }
+  &__icon {
+    display: none;
 
-      &__icon {
-        display: inline-block;
-        position: relative;
-        width: 35px;
-        height: 20px;
-        border-top: 4px solid black;
-        border-bottom: 4px solid black;
-        cursor: pointer;
-      }
+    @media (min-width: 320px) and (max-width: 768px) {
+      display: inline-block;
+      position: relative;
+      width: 35px;
+      height: 20px;
+      border-top: 4px solid black;
+      border-bottom: 4px solid black;
+      cursor: pointer;
 
-      &__icon:after {
+      &:after {
         content: '';
         position: absolute;
         width: 100%;

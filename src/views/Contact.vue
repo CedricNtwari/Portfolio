@@ -81,12 +81,12 @@ export default {
 
   &__label {
     font-weight: bold;
-  }
 
-  &__label::after {
-    content: '*';
-    color: red;
-    font-weight: bold;
+    &::after {
+      content: '*';
+      color: red;
+      font-weight: bold;
+    }
   }
 
   &__input {
@@ -95,10 +95,10 @@ export default {
     margin-bottom: 20px;
     outline: 0;
     border-width: 0 0 1px;
-  }
 
-  &__input:focus {
-    border-color: #ff7999;
+    &:focus {
+      border-color: #ff7999;
+    }
   }
 
   &__textarea {
@@ -106,10 +106,10 @@ export default {
     width: 100%;
     outline: none;
     margin-top: 10px;
-  }
 
-  &__textarea:focus {
-    border-color: #ff7999;
+    &:focus {
+      border-color: #ff7999;
+    }
   }
 
   &__error {

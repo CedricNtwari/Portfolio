@@ -25,6 +25,7 @@ import { works } from '../works-data.js'
 
 export default {
   name: 'Works',
+
   components: {
     WorkPreview,
   },
@@ -40,6 +41,7 @@ export default {
 <style lang="scss">
 .works {
   margin: 10%;
+
   &__link {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.893);

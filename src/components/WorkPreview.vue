@@ -18,22 +18,27 @@
 <script>
 export default {
   name: 'WorkPreview',
+
   props: {
     image: {
       type: String,
       required: true,
       default: '../assets/letterImage.png',
     },
+
     title: {
       type: String,
       required: true,
     },
+
     year: {
       type: String,
     },
+
     subject: {
       type: String,
     },
+
     text: {
       type: String,
     },
@@ -84,13 +89,13 @@ export default {
     font-size: 15px;
     color: grey;
   }
-}
 
-.work-preview::after {
-  display: inline-block;
-  content: '';
-  border-top: 1px solid lightgray;
-  width: 100%;
-  margin: 20px;
+  &::after {
+    display: inline-block;
+    content: '';
+    border-top: 1px solid lightgray;
+    width: 100%;
+    margin: 20px;
+  }
 }
 </style>

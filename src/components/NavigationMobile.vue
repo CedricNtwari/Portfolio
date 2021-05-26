@@ -11,6 +11,7 @@
 <script>
 export default {
   name: 'NavigationMobile',
+
   data() {
     return {
       isActive: true,

@@ -24,14 +24,17 @@ import { works } from '../works-data.js'
 
 export default {
   name: 'FeaturedWorks',
+
   components: {
     WorkPreview,
   },
+
   data() {
     return {
       works,
     }
   },
+
   computed: {
     displayedWorksPosts() {
       return works.slice(0, 3)
