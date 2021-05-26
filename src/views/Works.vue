@@ -13,6 +13,7 @@
         :title="work.title"
         :year="work.year"
         :subject="work.subject"
+        :text="work.text"
       />
     </router-link>
   </div>
