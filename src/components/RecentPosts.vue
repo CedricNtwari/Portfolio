@@ -28,6 +28,8 @@
 import BlogPreview from '@/components/BlogPreview.vue'
 import { blogs } from '../blogs-data.js'
 
+const viewportValue = 1320
+
 export default {
   name: 'RecentPosts',
 
@@ -38,7 +40,7 @@ export default {
   data() {
     return {
       viewportWidth: 0,
-      viewportValue: '1320',
+      viewportValue,
       blogs,
     }
   },
@@ -60,7 +62,7 @@ export default {
 
   computed: {
     displayedBlogPosts() {
-      return this.viewportWidth <= this.viewportValue ? blogs.slice(0, 2) : blogs.slice(0, 3)
+      return this.viewportWidth <= viewportValue ? blogs.slice(0, 2) : blogs.slice(0, 3)
     },
   },
 }
