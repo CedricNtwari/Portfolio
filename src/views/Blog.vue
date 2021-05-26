@@ -7,7 +7,7 @@
       :key="blog.id"
       :to="{ name: 'BlogDetails', params: { id: blog.id } }"
       ><BlogPreview
-        class="blog__Blog-preview"
+        class="blog__preview"
         :title="blog.title"
         :date="blog.date"
         :subject="blog.subject"
@@ -52,15 +52,16 @@ export default {
     }
   }
 
-  &__Blog-preview {
+  &__preview {
     margin: 20px;
     padding: 20px;
-  }
-  &__Blog-preview:after {
-    display: inline-block;
-    content: '';
-    border-top: 1px solid lightgray;
-    width: 100%;
+
+    &:after {
+      display: inline-block;
+      content: '';
+      border-top: 1px solid lightgray;
+      width: 100%;
+    }
   }
 }
 </style>
