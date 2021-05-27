@@ -40,7 +40,6 @@ export default {
   data() {
     return {
       viewportWidth: 0,
-      viewportValue,
       blogs,
     }
   },
