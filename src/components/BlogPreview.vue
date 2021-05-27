@@ -7,24 +7,27 @@
       <span class="blog-preview__subject">{{ subject }}</span>
     </div>
     <p class="blog-preview__paragraph">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. A reprehenderit optio hic ullam
-      temporibus aperiam consequuntur alias odio cupiditate praesentium maiores, ipsa neque?
-      Blanditiis, aperiam placeat. Quasi nihil reprehenderit ab?
+      {{ text }}
     </p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'BlogPreview',
   props: {
     title: {
       type: String,
     },
+
     date: {
       type: String,
     },
+
     subject: {
+      type: String,
+    },
+
+    text: {
       type: String,
     },
   },
@@ -38,17 +41,15 @@ export default {
   cursor: pointer;
   font-family: Avenir, Helvetica, Arial, sans-serif;
 
-  &:hover {
-    color: #1e81b0;
-  }
-
   &__date {
     padding-right: 40px;
     font-size: 15px;
   }
+
   &__subject {
     padding-left: 40px;
     font-size: 15px;
+    color: grey;
   }
 }
 </style>

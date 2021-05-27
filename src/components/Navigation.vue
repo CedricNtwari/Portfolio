@@ -33,37 +33,39 @@ export default {
   text-align: right;
 
   &__link {
+    display: inline-block;
+    position: relative;
     font-weight: bold;
     color: #2c3e50;
     text-decoration: none;
-    padding: 20px 20px 0 50px;
+    padding: 20px 50px 0 0;
 
     &.router-link-exact-active {
       color: #ff7999;
     }
+
+    &:hover {
+      color: #1e81b0;
+    }
+
+    @media (min-width: 320px) and (max-width: 768px) {
+      display: none;
+    }
   }
 
-  &__link:hover {
-    color: #1e81b0;
-  }
+  &__icon {
+    display: none;
 
-  @media (min-width: 320px) and (max-width: 768px) {
-    .navigation {
-      &__link {
-        display: none;
-      }
+    @media (min-width: 320px) and (max-width: 768px) {
+      display: inline-block;
+      position: relative;
+      width: 35px;
+      height: 20px;
+      border-top: 4px solid black;
+      border-bottom: 4px solid black;
+      cursor: pointer;
 
-      &__icon {
-        display: inline-block;
-        position: relative;
-        width: 35px;
-        height: 20px;
-        border-top: 4px solid black;
-        border-bottom: 4px solid black;
-        cursor: pointer;
-      }
-
-      &__icon:after {
+      &:after {
         content: '';
         position: absolute;
         width: 100%;

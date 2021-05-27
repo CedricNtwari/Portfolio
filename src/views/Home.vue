@@ -1,5 +1,5 @@
 <template>
-  <div class="works">
+  <div class="home">
     <Intro :msg="introMsg" />
     <RecentPosts />
     <FeaturedWorks />
@@ -27,3 +27,4 @@ export default {
   },
 }
 </script>
+<style lang="scss"></style>

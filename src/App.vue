@@ -22,6 +22,10 @@ export default {
 }
 </script>
 <style lang="scss">
+body {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
 .app {
   display: flex;
   height: 100vh;

@@ -9,9 +9,7 @@
       <span class="work-preview__year">{{ year }}</span>
       <span class="work-preview__subject">{{ subject }}</span>
       <p class="work-preview__paragraph">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. A reprehenderit optio hic ullam
-        temporibus aperiam consequuntur alias odio cupiditate praesentium maiores, ipsa neque?
-        Blanditiis, aperiam placeat. Quasi nihil reprehenderit ab?
+        {{ text }}
       </p>
     </div>
   </div>
@@ -20,20 +18,28 @@
 <script>
 export default {
   name: 'WorkPreview',
+
   props: {
     image: {
       type: String,
       required: true,
       default: '../assets/letterImage.png',
     },
+
     title: {
       type: String,
       required: true,
     },
+
     year: {
       type: String,
     },
+
     subject: {
+      type: String,
+    },
+
+    text: {
       type: String,
     },
   },
@@ -50,13 +56,13 @@ export default {
   cursor: pointer;
   font-family: Avenir, Helvetica, Arial, sans-serif;
 
-  &:hover {
-    color: #1e81b0;
-  }
-
   &__column {
     flex: 50%;
     padding: 0 30px 0 0;
+
+    @media (min-width: 320px) and (max-width: 768px) {
+      flex-basis: 100%;
+    }
   }
 
   &__column:nth-child(1) {
@@ -81,20 +87,15 @@ export default {
   &__subject {
     padding-left: 40px;
     font-size: 15px;
+    color: grey;
   }
 
-  @media (min-width: 320px) and (max-width: 768px) {
-    &__column {
-      flex-basis: 100%;
-    }
+  &::after {
+    display: inline-block;
+    content: '';
+    border-top: 1px solid lightgray;
+    width: 100%;
+    margin: 20px;
   }
-}
-
-.work-preview::after {
-  display: inline-block;
-  content: '';
-  border-top: 1px solid lightgray;
-  width: 100%;
-  margin: 20px;
 }
 </style>

@@ -65,7 +65,7 @@ export default {
 
 <style lang="scss">
 .contact {
-  margin: 10%;
+  margin: 5% 20%;
 
   &__header::after {
     display: inline-block;
@@ -81,23 +81,35 @@ export default {
 
   &__label {
     font-weight: bold;
-  }
 
-  &__label::after {
-    content: '*';
-    color: red;
-    font-weight: bold;
+    &::after {
+      content: '*';
+      color: red;
+      font-weight: bold;
+    }
   }
 
   &__input {
-    height: 25px;
+    height: 35px;
     width: 100%;
     margin-bottom: 20px;
+    outline: 0;
+    border-width: 0 0 1px;
+
+    &:focus {
+      border-color: #ff7999;
+    }
   }
 
   &__textarea {
     height: 150px;
     width: 100%;
+    outline: none;
+    margin-top: 10px;
+
+    &:focus {
+      border-color: #ff7999;
+    }
   }
 
   &__error {
