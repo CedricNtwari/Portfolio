@@ -8,7 +8,7 @@
     <div class="navigation__icon">
       <span class="navigation__bar"></span>
       <span class="navigation__bar"></span>
-      <span class="navigation__bar"></span>
+      <!-- <span class="navigation__bar"></span> -->
     </div>
   </div>
 </template>
@@ -16,11 +16,6 @@
 <script>
 export default {
   name: 'Navigation',
-  data() {
-    return {
-      isActive: true,
-    }
-  },
 }
 </script>
 
@@ -33,47 +28,27 @@ export default {
   text-align: right;
 
   &__link {
-    display: inline-block;
-    position: relative;
-    font-weight: bold;
-    color: #2c3e50;
-    text-decoration: none;
-    padding: 20px 50px 0 0;
+    display: none;
 
-    &.router-link-exact-active {
-      color: #ff7999;
-    }
-
-    &:hover {
-      color: #1e81b0;
-    }
-
-    @media (min-width: 320px) and (max-width: 768px) {
-      display: none;
+    @media (min-width: 768px) {
+      display: inline;
+      font-weight: bold;
+      color: #2c3e50;
+      text-decoration: none;
+      padding: 20px 40px 0 0;
     }
   }
 
   &__icon {
-    display: none;
+    display: inline-block;
+    width: 30px;
+    height: 10px;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    cursor: pointer;
 
-    @media (min-width: 320px) and (max-width: 768px) {
-      display: inline-block;
-      position: relative;
-      width: 35px;
-      height: 20px;
-      border-top: 4px solid black;
-      border-bottom: 4px solid black;
-      cursor: pointer;
-
-      &:after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 4px;
-        background-color: #000;
-        top: 8px;
-        right: 0;
-      }
+    @media (min-width: 768px) {
+      display: none;
     }
   }
 }
