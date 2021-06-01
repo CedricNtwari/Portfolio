@@ -8,7 +8,7 @@
       :to="{ name: 'WorkDetails', params: { id: work.id } }"
     >
       <WorkPreview
-        class="works__work-preview"
+        class="works__preview"
         :image="work.image"
         :title="work.title"
         :year="work.year"

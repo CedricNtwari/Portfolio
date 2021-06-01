@@ -49,38 +49,29 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .work-preview {
-  // eslint-disable-next-line prettier/prettier
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  cursor: pointer;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  padding: 0 0 20px 0;
 
-  &__column {
-    flex: 50%;
-    padding: 0 30px 0 0;
-
-    @media (min-width: 320px) and (max-width: 768px) {
-      flex-basis: 100%;
-    }
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
   }
 
-  &__column:nth-child(1) {
-    flex: 0 0 300px;
+  &__column {
+    padding: 0 20px 0 0;
   }
 
   &__image {
-    max-width: 100%;
+    width: 100%;
     height: 300px;
     border-radius: 7%;
-    margin: 20px 0 20px 0;
+
+    @media (min-width: 768px) {
+      width: 300px;
+    }
   }
 
-  &__year {
-    padding: 5px;
-    background-color: black;
-    color: white;
-    border-radius: 50%;
+  &__date {
+    padding-right: 40px;
     font-size: 15px;
   }
 
@@ -95,7 +86,10 @@ export default {
     content: '';
     border-top: 1px solid lightgray;
     width: 100%;
-    margin: 20px;
+
+    @media (min-width: 1024px) {
+      display: none;
+    }
   }
 }
 </style>

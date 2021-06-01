@@ -30,6 +30,10 @@ export default {
   &__link {
     display: none;
 
+    &.router-link-exact-active {
+      color: #ff7999;
+    }
+
     @media (min-width: 768px) {
       display: inline;
       font-weight: bold;
