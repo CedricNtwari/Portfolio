@@ -51,7 +51,7 @@ export default {
   &__header {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
       Geneva, Verdana, sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     padding: 20px 0;
   }
 

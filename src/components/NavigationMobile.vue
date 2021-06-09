@@ -11,12 +11,6 @@
 <script>
 export default {
   name: 'NavigationMobile',
-
-  data() {
-    return {
-      isActive: true,
-    }
-  },
 }
 </script>
 
@@ -26,11 +20,5 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: right;
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: flex;
-  flex-direction: column;
 }
 </style>

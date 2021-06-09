@@ -3,12 +3,12 @@
 <template>
   <div class="intro">
     <div class="intro__column">
+      <img class="intro__image" alt="My picture" src="../assets/bb.png" />
+    </div>
+    <div class="intro__column">
       <h1 class="intro__header">{{ msg }}</h1>
       <p class="intro__paragraph">{{ paragraph }}</p>
       <button class="intro__button" @click="download">{{ cta }}</button>
-    </div>
-    <div class="intro__column">
-      <img class="intro__image" alt="My picture" src="../assets/bb.png" />
     </div>
   </div>
 </template>
@@ -50,32 +50,27 @@ export default {
 <!-- IE10 and down do not support flex -->
 <style scoped lang="scss">
 .intro {
-  display: flex;
-  flex-wrap: wrap;
   margin: 15%;
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  min-width: 300px;
 
-  @media (min-width: 320px) and (max-width: 768px) {
+  @media (min-width: 768px) {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row-reverse;
   }
 
   &__column {
-    flex: 50%;
-
-    @media (min-width: 320px) and (max-width: 768px) {
-      flex-basis: 100%;
+    @media (min-width: 768px) {
+      flex: 50%;
     }
   }
 
   &__button {
     background-color: #ff7999;
-    color: white;
     border: none;
+    color: white;
+    cursor: pointer;
     padding: 15px;
     margin-top: 30px;
-    cursor: pointer;
   }
 
   &__image {
@@ -84,15 +79,6 @@ export default {
     border-radius: 50%;
     display: block;
     margin: auto;
-  }
-
-  @media (min-width: 320px) and (max-width: 768px) {
-    display: flex;
-    flex-direction: column-reverse;
-
-    &__column {
-      flex-basis: 100%;
-    }
   }
 }
 </style>

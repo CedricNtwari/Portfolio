@@ -40,6 +40,7 @@ export default {
   background-color: white;
   cursor: pointer;
   font-family: Avenir, Helvetica, Arial, sans-serif;
+  padding: 10px;
 
   &__date {
     padding-right: 40px;
