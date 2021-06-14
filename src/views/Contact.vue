@@ -70,12 +70,12 @@ export default {
   &__header::after {
     display: inline-block;
     content: '';
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid $color-light;
     width: 100%;
   }
 
   &__title {
-    color: gray;
+    color: $color-light;
     font-size: 15px;
   }
 
@@ -84,7 +84,7 @@ export default {
 
     &::after {
       content: '*';
-      color: red;
+      color: $color-red;
       font-weight: bold;
     }
   }
@@ -97,7 +97,7 @@ export default {
     border-width: 0 0 1px;
 
     &:focus {
-      border-color: #ff7999;
+      border-color: $color-primary;
     }
   }
 
@@ -108,19 +108,19 @@ export default {
     margin-top: 10px;
 
     &:focus {
-      border-color: #ff7999;
+      border-color: $color-primary;
     }
   }
 
   &__error {
-    color: red;
+    color: $color-red;
   }
 
   &__button {
     margin-top: 30px;
     padding: 10px;
-    background-color: #ff7999;
-    color: white;
+    background-color: $color-primary;
+    color: $color-white;
     border: none;
   }
 }

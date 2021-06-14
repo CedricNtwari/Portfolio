@@ -51,23 +51,22 @@ export default {
 <style scoped lang="scss">
 .intro {
   margin: 15%;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
 
-  @media (min-width: 768px) {
+  @media ($tablet-up) {
     display: flex;
     flex-direction: row-reverse;
   }
 
   &__column {
-    @media (min-width: 768px) {
+    @media ($tablet-up) {
       flex: 50%;
     }
   }
 
   &__button {
-    background-color: #ff7999;
+    background-color: $color-primary;
     border: none;
-    color: white;
+    color: $color-white;
     cursor: pointer;
     padding: 15px;
     margin-top: 30px;

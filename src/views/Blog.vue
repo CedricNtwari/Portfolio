@@ -40,16 +40,15 @@ export default {
   margin: 10%;
 
   &__header {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
     padding-left: 38px;
   }
 
   &__link {
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.893);
+    color: $color-dark;
 
     &:hover {
-      color: #1e81b0;
+      color: $color-secondary;
     }
   }
 
@@ -60,7 +59,7 @@ export default {
     &:after {
       display: inline-block;
       content: '';
-      border-top: 1px solid lightgray;
+      border-top: 1px solid $color-light;
       width: 100%;
     }
   }

@@ -19,8 +19,8 @@ export default {
 <style scoped lang="scss">
 .go-back {
   &__button {
-    background-color: #ff7999;
-    color: white;
+    background-color: $color-primary;
+    color: $color-white;
     border: none;
     padding: 15px;
     cursor: pointer;

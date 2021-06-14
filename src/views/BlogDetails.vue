@@ -47,7 +47,7 @@ export default {
 
   &__paragraph::first-letter {
     font-size: 200%;
-    color: #ff7999;
+    color: $color-primary;
   }
 }
 </style>

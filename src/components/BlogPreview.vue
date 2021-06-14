@@ -37,10 +37,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .blog-preview {
-  background-color: white;
+  background-color: $color-white;
   cursor: pointer;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   padding: 10px;
+  height: 500px;
 
   &__date {
     padding-right: 40px;
@@ -50,7 +50,7 @@ export default {
   &__subject {
     padding-left: 40px;
     font-size: 15px;
-    color: grey;
+    color: $color-light;
   }
 }
 </style>

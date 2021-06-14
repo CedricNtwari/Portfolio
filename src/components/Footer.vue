@@ -46,7 +46,7 @@ export default {
   .fa-twitter,
   .fa-linkedin {
     text-decoration: none;
-    color: black;
+    color: $color-dark;
     padding: 5px;
     margin: 5px;
     cursor: pointer;
@@ -56,7 +56,7 @@ export default {
   .fa-instagram:hover,
   .fa-twitter:hover,
   .fa-linkedin:hover {
-    color: #1e81b0;
+    color: $color-secondary;
   }
 }
 </style>

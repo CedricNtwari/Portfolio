@@ -46,7 +46,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .featured-works {
-  margin: 0 15% 0 15%;
+  margin: 0 15%;
 
   &__header {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
@@ -57,10 +57,10 @@ export default {
 
   &__link {
     text-decoration: none;
-    color: #000000;
+    color: $color-dark;
 
     &:hover {
-      color: #1e81b0;
+      color: $color-secondary;
     }
   }
 }

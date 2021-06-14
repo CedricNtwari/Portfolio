@@ -49,15 +49,15 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .work-preview {
-  padding: 0 0 20px 0;
+  padding-bottom: 20px;
 
-  @media (min-width: 1024px) {
+  @media ($tablet-large-up) {
     display: flex;
     flex-direction: row;
   }
 
   &__column {
-    padding: 0 20px 0 0;
+    padding-right: 20px;
   }
 
   &__image {
@@ -65,7 +65,7 @@ export default {
     height: 300px;
     border-radius: 7%;
 
-    @media (min-width: 768px) {
+    @media ($tablet-up) {
       width: 300px;
     }
   }
@@ -78,16 +78,16 @@ export default {
   &__subject {
     padding-left: 40px;
     font-size: 15px;
-    color: grey;
+    color: $color-light;
   }
 
   &::after {
     display: inline-block;
     content: '';
-    border-top: 1px solid lightgray;
+    border-top: 1px solid $color-light;
     width: 100%;
 
-    @media (min-width: 1024px) {
+    @media ($tablet-large-up) {
       display: none;
     }
   }
