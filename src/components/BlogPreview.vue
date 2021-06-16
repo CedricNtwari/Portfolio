@@ -39,7 +39,6 @@ export default {
 .blog-preview {
   background-color: $color-white;
   cursor: pointer;
-  // padding: 25px;
 
   &__title {
     font-size: 26px;

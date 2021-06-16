@@ -46,13 +46,22 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .featured-works {
-  margin: 0 15%;
+  @media ($tablet-large-up) {
+    margin: 0 15%;
+  }
 
   &__header {
+    text-align: center;
     font-size: 22px;
     font-weight: normal;
-    padding-top: 30px;
-    margin: 0;
+    padding-top: 40px;
+
+    @media ($tablet-large-up) {
+      font-size: 22px;
+      font-weight: normal;
+      padding-top: 30px;
+      margin: 0;
+    }
   }
 
   &__link {

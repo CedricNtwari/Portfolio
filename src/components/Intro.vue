@@ -51,11 +51,14 @@ export default {
 <style scoped lang="scss">
 .intro {
   font-family: 'Heebo', sans-serif;
-  margin: 15%;
+  margin: 5%;
+  text-align: center;
 
   @media ($tablet-up) {
     display: flex;
     flex-direction: row-reverse;
+    margin: 15%;
+    text-align: left;
   }
 
   &__header {
@@ -63,11 +66,13 @@ export default {
     letter-spacing: 2px;
     font-size: 44px;
     line-height: 60px;
+    text-align: center;
   }
 
   &__paragraph {
     font-size: 16px;
     line-height: 1.6;
+    text-align-last: center;
   }
 
   &__column {

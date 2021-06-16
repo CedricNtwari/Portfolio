@@ -68,19 +68,9 @@ export default {
   margin: 5% 20%;
 
   &__header {
-    border-bottom: 1px solid $color-line-break;
-    // width: 100%;
+    border-bottom: 1px solid $color-primary;
+    width: 5%;
     padding-bottom: 20px;
-
-    &::after {
-      display: inline-block;
-      position: absolute;
-      content: '';
-      border-bottom: 3px solid $color-primary;
-      width: 5%;
-      top: 190px;
-      left: 250px;
-    }
   }
   &__title {
     color: $color-light;
@@ -89,7 +79,6 @@ export default {
 
   &__label {
     font-weight: bold;
-    // padding-bottom: 30px;
 
     &::after {
       content: '*';
@@ -104,7 +93,6 @@ export default {
     margin-bottom: 20px;
     outline: 0;
     border-width: 0 0 1px;
-    // color: $color-line-break;
 
     &:focus {
       border-color: $color-primary;

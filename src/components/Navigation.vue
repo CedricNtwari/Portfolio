@@ -27,31 +27,20 @@ export default {
   text-align: right;
 
   &__link {
-    display: none;
-    font-size: 20px;
+    font-size: 15px;
+    display: inline-block;
+    font-weight: bold;
+    color: $color-dark;
+    text-decoration: none;
+    padding-top: 20px;
+    padding-right: 20px;
 
     &.router-link-exact-active {
       color: $color-primary;
     }
-
-    @media ($tablet-up) {
-      display: inline-block;
-      font-weight: bold;
-      color: $color-dark;
-      text-decoration: none;
-      padding-top: 20px;
-      padding-right: 40px;
-    }
   }
 
   &__icon {
-    display: inline-block;
-    width: 30px;
-    height: 10px;
-    border-top: 4px solid $color-dark;
-    border-bottom: 4px solid $color-dark;
-    cursor: pointer;
-
     @media ($tablet-up) {
       display: none;
     }

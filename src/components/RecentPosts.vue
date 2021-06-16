@@ -72,33 +72,42 @@ export default {
   background-color: $color-background;
 
   &__header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 15%;
-    padding-left: 15%;
-    padding-top: 10px;
+    text-align: center;
+
+    @media ($tablet-large-up) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 15%;
+      padding-left: 15%;
+      padding-top: 10px;
+    }
   }
 
   &__title {
     font-size: 22px;
     font-weight: normal;
+    padding-top: 40px;
   }
 
   &__link {
-    text-decoration: none;
-    font-size: 16px;
+    visibility: hidden;
+
+    @media ($tablet-large-up) {
+      visibility: visible;
+      text-decoration: none;
+      font-size: 16px;
+    }
   }
 
   &__blog-preview {
-    padding-right: 14%;
-    padding-bottom: 5%;
-    padding-left: 14%;
-
     @media ($tablet-large-up) {
       display: flex;
       flex-direction: row;
+      padding-right: 14%;
+      padding-bottom: 5%;
+      padding-left: 14%;
     }
   }
 
