@@ -13,6 +13,7 @@
       </p>
     </div>
   </div>
+  <div class="work-preview__line"></div>
 </template>
 
 <script>
@@ -49,7 +50,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .work-preview {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
+  padding-top: 50px;
 
   @media ($tablet-large-up) {
     display: flex;
@@ -57,51 +59,50 @@ export default {
   }
 
   &__column {
-    padding-right: 20px;
+    padding-right: 30px;
   }
 
   &__header {
     font-size: 26px;
     padding-bottom: 20px;
+    margin: 0;
   }
 
   &__image {
     width: 100%;
-    height: 300px;
-    border-radius: 7%;
+    height: 200px;
+    border-radius: 6px;
 
     @media ($tablet-up) {
       width: 300px;
     }
   }
 
-  &__date {
-    padding-right: 40px;
-    font-size: 15px;
+  &__year {
+    font-size: 18px;
+    background-color: $color-dark;
+    color: $color-white;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 16px;
   }
 
   &__subject {
-    padding-left: 40px;
-    font-size: 15px;
+    padding-left: 30px;
+    font-size: 20px;
     color: $color-light;
   }
 
   &__paragraph {
-    // padding-top: 20px;
     font-size: 16px;
-    letter-spacing: 2px;
     line-height: 1.6;
+    padding-top: 10px;
   }
+}
 
-  &::after {
-    // display: inline-block;
-    // content: '';
-    // border-top: 1px solid $color-light;
-    // width: 100%;
-
-    @media ($tablet-large-up) {
-      display: none;
-    }
-  }
+.work-preview__line {
+  content: '';
+  border-top: 1px solid $color-line-break;
+  width: 100%;
 }
 </style>

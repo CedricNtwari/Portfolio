@@ -40,7 +40,9 @@ export default {
   margin: 10%;
 
   &__header {
-    padding-left: 38px;
+    text-decoration: none;
+    font-size: 44px;
+    padding-bottom: 20px;
   }
 
   &__link {
@@ -53,13 +55,12 @@ export default {
   }
 
   &__preview {
-    margin: 20px;
-    padding: 20px;
-
+    padding-top: 10px;
+    padding-bottom: 20px;
     &:after {
       display: inline-block;
       content: '';
-      border-top: 1px solid $color-light;
+      border-top: 1px solid $color-line-break;
       width: 100%;
     }
   }

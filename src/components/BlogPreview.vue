@@ -39,8 +39,7 @@ export default {
 .blog-preview {
   background-color: $color-white;
   cursor: pointer;
-  padding: 15px;
-  margin-top: 40px;
+  // padding: 25px;
 
   &__title {
     font-size: 26px;
@@ -60,7 +59,6 @@ export default {
   &__paragraph {
     padding-top: 20px;
     font-size: 16px;
-    letter-spacing: 2px;
     line-height: 1.6;
   }
 }

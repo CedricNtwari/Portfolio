@@ -35,7 +35,7 @@ export default {
     }
 
     @media ($tablet-up) {
-      display: inline;
+      display: inline-block;
       font-weight: bold;
       color: $color-dark;
       text-decoration: none;

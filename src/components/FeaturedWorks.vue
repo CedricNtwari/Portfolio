@@ -16,7 +16,6 @@
         :text="work.text"
     /></router-link>
   </div>
-  <div class="featured-works__line"></div>
 </template>
 
 <script>
@@ -52,7 +51,8 @@ export default {
   &__header {
     font-size: 22px;
     font-weight: normal;
-    padding: 20px 0;
+    padding-top: 30px;
+    margin: 0;
   }
 
   &__link {
@@ -61,15 +61,6 @@ export default {
 
     &:hover {
       color: $color-secondary;
-    }
-  }
-
-  &__line {
-    &::after {
-      display: inline-block;
-      content: '';
-      border-top: 1px solid $color-light;
-      width: 100%;
     }
   }
 }

@@ -70,7 +70,6 @@ export default {
 <style scoped lang="scss">
 .recent-posts {
   background-color: $color-background;
-  height: auto;
 
   &__header {
     display: flex;
@@ -79,6 +78,7 @@ export default {
     align-items: center;
     padding-right: 15%;
     padding-left: 15%;
+    padding-top: 10px;
   }
 
   &__title {
@@ -92,7 +92,9 @@ export default {
   }
 
   &__blog-preview {
-    padding: 0 14% 5% 14%;
+    padding-right: 14%;
+    padding-bottom: 5%;
+    padding-left: 14%;
 
     @media ($tablet-large-up) {
       display: flex;
@@ -104,10 +106,6 @@ export default {
     text-decoration: none;
     color: $color-dark;
     margin: 10px;
-
-    @media ($tablet-up) {
-      // margin-right: 10px;
-    }
 
     &:hover {
       color: $color-secondary;

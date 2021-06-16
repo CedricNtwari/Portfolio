@@ -67,13 +67,21 @@ export default {
 .contact {
   margin: 5% 20%;
 
-  &__header::after {
-    display: inline-block;
-    content: '';
-    border-bottom: 1px solid $color-light;
-    width: 100%;
-  }
+  &__header {
+    border-bottom: 1px solid $color-line-break;
+    // width: 100%;
+    padding-bottom: 20px;
 
+    &::after {
+      display: inline-block;
+      position: absolute;
+      content: '';
+      border-bottom: 3px solid $color-primary;
+      width: 5%;
+      top: 190px;
+      left: 250px;
+    }
+  }
   &__title {
     color: $color-light;
     font-size: 15px;
@@ -81,6 +89,7 @@ export default {
 
   &__label {
     font-weight: bold;
+    // padding-bottom: 30px;
 
     &::after {
       content: '*';
@@ -90,11 +99,12 @@ export default {
   }
 
   &__input {
-    height: 35px;
+    height: 50px;
     width: 100%;
     margin-bottom: 20px;
     outline: 0;
     border-width: 0 0 1px;
+    // color: $color-line-break;
 
     &:focus {
       border-color: $color-primary;
