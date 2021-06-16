@@ -37,9 +37,9 @@ export default {
     return {
       paragraph:
         'Passionate about the web and front-end development in particular. I write code for a living' +
-        'and I am also into open-source these days. Aside from coding I also help other developers' +
-        'during one-to-one session online. I am active in the local developers community in my home' +
-        'country Mauritius. I help organising meetups and speak there from time to time.',
+        ' and I am also into open-source these days. Aside from coding I also help other developers' +
+        ' during one-to-one session online. I am active in the local developers community in my home' +
+        ' country Burundi. I help organising meetups and speak there from time to time.',
       cta: 'Download resume',
     }
   },
@@ -50,11 +50,24 @@ export default {
 <!-- IE10 and down do not support flex -->
 <style scoped lang="scss">
 .intro {
+  font-family: 'Heebo', sans-serif;
   margin: 15%;
 
   @media ($tablet-up) {
     display: flex;
     flex-direction: row-reverse;
+  }
+
+  &__header {
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 44px;
+    line-height: 60px;
+  }
+
+  &__paragraph {
+    font-size: 16px;
+    line-height: 1.6;
   }
 
   &__column {
@@ -70,6 +83,7 @@ export default {
     cursor: pointer;
     padding: 15px;
     margin-top: 30px;
+    font-size: 20px;
   }
 
   &__image {

@@ -39,18 +39,29 @@ export default {
 .blog-preview {
   background-color: $color-white;
   cursor: pointer;
-  padding: 10px;
-  height: 500px;
+  padding: 15px;
+  margin-top: 40px;
+
+  &__title {
+    font-size: 26px;
+    padding-bottom: 20px;
+  }
 
   &__date {
-    padding-right: 40px;
+    padding-right: 10px;
     font-size: 15px;
   }
 
   &__subject {
-    padding-left: 40px;
+    padding-left: 10px;
     font-size: 15px;
-    color: $color-light;
+  }
+
+  &__paragraph {
+    padding-top: 20px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 1.6;
   }
 }
 </style>

@@ -28,6 +28,7 @@ export default {
 
   &__link {
     display: none;
+    font-size: 20px;
 
     &.router-link-exact-active {
       color: $color-primary;

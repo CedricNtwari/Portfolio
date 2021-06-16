@@ -69,7 +69,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .recent-posts {
-  background-color: $color-secondary;
+  background-color: $color-background;
   height: auto;
 
   &__header {
@@ -82,18 +82,19 @@ export default {
   }
 
   &__title {
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: normal;
   }
 
   &__link {
     text-decoration: none;
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
   }
 
   &__blog-preview {
-    padding: 0 15% 5% 15%;
+    padding: 0 14% 5% 14%;
 
-    @media ($tablet-up) {
+    @media ($tablet-large-up) {
       display: flex;
       flex-direction: row;
     }
@@ -105,7 +106,7 @@ export default {
     margin: 10px;
 
     @media ($tablet-up) {
-      margin-right: 10px;
+      // margin-right: 10px;
     }
 
     &:hover {

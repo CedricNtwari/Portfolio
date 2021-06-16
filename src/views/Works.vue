@@ -49,6 +49,14 @@ export default {
     &:hover {
       color: $color-secondary;
     }
+
+    &:after {
+      display: inline-block;
+      content: '';
+      border-top: 1px solid $color-light;
+      width: 100%;
+      padding-bottom: 20px;
+    }
   }
 }
 </style>

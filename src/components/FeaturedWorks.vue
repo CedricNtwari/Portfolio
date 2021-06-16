@@ -16,6 +16,7 @@
         :text="work.text"
     /></router-link>
   </div>
+  <div class="featured-works__line"></div>
 </template>
 
 <script>
@@ -49,9 +50,8 @@ export default {
   margin: 0 15%;
 
   &__header {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
-      Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: normal;
     padding: 20px 0;
   }
 
@@ -61,6 +61,15 @@ export default {
 
     &:hover {
       color: $color-secondary;
+    }
+  }
+
+  &__line {
+    &::after {
+      display: inline-block;
+      content: '';
+      border-top: 1px solid $color-light;
+      width: 100%;
     }
   }
 }

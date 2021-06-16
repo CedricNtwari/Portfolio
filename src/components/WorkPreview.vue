@@ -60,6 +60,11 @@ export default {
     padding-right: 20px;
   }
 
+  &__header {
+    font-size: 26px;
+    padding-bottom: 20px;
+  }
+
   &__image {
     width: 100%;
     height: 300px;
@@ -81,11 +86,18 @@ export default {
     color: $color-light;
   }
 
+  &__paragraph {
+    // padding-top: 20px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 1.6;
+  }
+
   &::after {
-    display: inline-block;
-    content: '';
-    border-top: 1px solid $color-light;
-    width: 100%;
+    // display: inline-block;
+    // content: '';
+    // border-top: 1px solid $color-light;
+    // width: 100%;
 
     @media ($tablet-large-up) {
       display: none;
