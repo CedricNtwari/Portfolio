@@ -52,12 +52,17 @@ export default {
 .intro {
   margin: 5%;
   text-align: center;
+  padding-top: 40px;
 
   @media ($tablet-up) {
     display: flex;
     flex-direction: row-reverse;
-    margin: 15%;
+    margin-top: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    margin-left: 15%;
     text-align: left;
+    padding: 0;
   }
 
   &__header {
@@ -66,12 +71,20 @@ export default {
     font-size: 44px;
     line-height: 60px;
     text-align: center;
+
+    @media ($tablet-up) {
+      text-align: left;
+    }
   }
 
   &__paragraph {
     font-size: 16px;
     line-height: 1.6;
     text-align-last: center;
+
+    @media ($tablet-up) {
+      text-align-last: left;
+    }
   }
 
   &__column {
@@ -89,6 +102,7 @@ export default {
     margin-top: 20px;
     margin-bottom: 30px;
     font-size: 20px;
+    font-family: 'Heebo', sans-serif;
   }
 
   &__image {

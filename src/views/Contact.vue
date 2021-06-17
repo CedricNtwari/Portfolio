@@ -67,18 +67,27 @@ export default {
 .contact {
   margin: 5%;
 
-  @media ($tablet-large-up) {
-    margin: 5%;
+  @media ($tablet-up) {
+    margin: 10%;
   }
 
   &__header {
     border-bottom: 1px solid $color-primary;
     width: 5%;
     padding-bottom: 20px;
+    font-size: 30px;
+    margin: 0;
+
+    @media ($tablet-up) {
+      font-size: 44px;
+    }
   }
+
   &__title {
     color: $color-light;
     font-size: 15px;
+    position: relative;
+    top: -3px;
   }
 
   &__label {
@@ -124,6 +133,7 @@ export default {
     background-color: $color-primary;
     color: $color-white;
     border: none;
+    font-family: 'Heebo', sans-serif;
   }
 }
 </style>

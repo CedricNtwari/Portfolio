@@ -47,7 +47,8 @@ export default {
 <style scoped lang="scss">
 .featured-works {
   margin: 0 5%;
-  @media ($tablet-large-up) {
+
+  @media ($tablet-up) {
     margin: 0 15%;
   }
 
@@ -55,13 +56,11 @@ export default {
     text-align: center;
     font-size: 22px;
     font-weight: normal;
-    padding-top: 40px;
+    padding-top: 30px;
+    margin: 0;
 
-    @media ($tablet-large-up) {
-      font-size: 22px;
-      font-weight: normal;
+    @media ($tablet-up) {
       text-align: left;
-      margin: 0;
     }
   }
 

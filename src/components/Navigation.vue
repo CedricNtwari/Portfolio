@@ -34,6 +34,7 @@ export default {
     text-decoration: none;
     padding-top: 20px;
     padding-right: 20px;
+    padding-bottom: 30px;
 
     &.router-link-exact-active {
       color: $color-primary;

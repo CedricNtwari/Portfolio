@@ -73,22 +73,22 @@ export default {
 
   &__header {
     text-align: center;
+    padding-top: 20px;
 
     @media ($tablet-large-up) {
       display: flex;
-      flex-direction: row;
       justify-content: space-between;
       align-items: center;
       padding-right: 15%;
       padding-left: 15%;
-      padding-top: 10px;
+      padding-top: 30px;
     }
   }
 
   &__title {
     font-size: 22px;
     font-weight: normal;
-    padding-top: 30px;
+    margin: 0;
   }
 
   &__link {
@@ -102,8 +102,13 @@ export default {
   }
 
   &__blog-preview {
-    // margin: 10%;
-    // padding: 5%;
+    padding-right: 1%;
+    padding-bottom: 5%;
+    padding-left: 1%;
+
+    @media ($tablet-up) {
+      padding: 1%;
+    }
     @media ($tablet-large-up) {
       display: flex;
       flex-direction: row;
@@ -116,7 +121,7 @@ export default {
   &__preview-link {
     text-decoration: none;
     color: $color-dark;
-    // padding-top: -50px;
+    // margin: 30px;
 
     &:hover {
       color: $color-secondary;

@@ -39,14 +39,20 @@ export default {
 .blog {
   margin: 5%;
 
-  @media ($tablet-large-up) {
-    margin: 10%;
+  @media ($tablet-up) {
+    margin: 7.5% 7% 7% 9.8%;
   }
 
   &__header {
     text-decoration: none;
-    font-size: 44px;
+    font-size: 30px;
     padding-bottom: 20px;
+    border-bottom: 1px solid $color-primary;
+    width: 5%;
+
+    @media ($tablet-up) {
+      font-size: 44px;
+    }
   }
 
   &__link {
@@ -59,9 +65,9 @@ export default {
   }
 
   &__preview {
-    padding-top: 10px;
-    padding-bottom: 20px;
-    // margin: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+
     &:after {
       display: inline-block;
       content: '';

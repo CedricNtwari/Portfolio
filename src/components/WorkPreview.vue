@@ -50,8 +50,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .work-preview {
-  padding-bottom: 40px;
-  padding-top: 50px;
+  padding-bottom: 20px;
+  padding-top: 35px;
 
   @media ($tablet-large-up) {
     display: flex;
@@ -63,9 +63,12 @@ export default {
   }
 
   &__header {
-    font-size: 26px;
-    padding-bottom: 20px;
-    margin: 0;
+    @media ($tablet-up) and ($tablet-large-up) {
+      font-size: 26px;
+      padding-bottom: 20px;
+      margin: 0;
+      padding-top: 0;
+    }
   }
 
   &__image {
@@ -97,6 +100,13 @@ export default {
     font-size: 16px;
     line-height: 1.6;
     padding-top: 10px;
+  }
+}
+
+.work-preview:hover {
+  .work-preview__subject,
+  .work-preview__year {
+    color: $color-secondary;
   }
 }
 

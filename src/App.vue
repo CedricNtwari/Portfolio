@@ -25,7 +25,6 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
   font-family: 'Heebo', sans-serif;
-  letter-spacing: 1px;
 }
 
 .app {
