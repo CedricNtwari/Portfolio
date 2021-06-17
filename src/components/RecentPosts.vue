@@ -98,6 +98,7 @@ export default {
       visibility: visible;
       text-decoration: none;
       font-size: 16px;
+      color: $color-secondary;
     }
   }
 
