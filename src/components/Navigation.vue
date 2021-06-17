@@ -38,6 +38,10 @@ export default {
     &.router-link-exact-active {
       color: $color-primary;
     }
+
+    @media ($tablet-up) {
+      font-size: 20px;
+    }
   }
 
   &__icon {

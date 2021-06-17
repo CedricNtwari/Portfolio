@@ -40,7 +40,7 @@ export default {
         ' and I am also into open-source these days. Aside from coding I also help other developers' +
         ' during one-to-one session online. I am active in the local developers community in my home' +
         ' country Burundi. I help organising meetups and speak there from time to time.',
-      cta: 'Download resume',
+      cta: 'Download Resume',
     }
   },
 }
@@ -50,7 +50,6 @@ export default {
 <!-- IE10 and down do not support flex -->
 <style scoped lang="scss">
 .intro {
-  font-family: 'Heebo', sans-serif;
   margin: 5%;
   text-align: center;
 
@@ -87,7 +86,8 @@ export default {
     color: $color-white;
     cursor: pointer;
     padding: 15px;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
     font-size: 20px;
   }
 

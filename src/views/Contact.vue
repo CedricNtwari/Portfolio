@@ -65,7 +65,11 @@ export default {
 
 <style lang="scss">
 .contact {
-  margin: 5% 20%;
+  margin: 5%;
+
+  @media ($tablet-large-up) {
+    margin: 5%;
+  }
 
   &__header {
     border-bottom: 1px solid $color-primary;

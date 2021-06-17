@@ -88,7 +88,7 @@ export default {
   &__title {
     font-size: 22px;
     font-weight: normal;
-    padding-top: 40px;
+    padding-top: 30px;
   }
 
   &__link {
@@ -102,6 +102,8 @@ export default {
   }
 
   &__blog-preview {
+    // margin: 10%;
+    // padding: 5%;
     @media ($tablet-large-up) {
       display: flex;
       flex-direction: row;
@@ -114,7 +116,7 @@ export default {
   &__preview-link {
     text-decoration: none;
     color: $color-dark;
-    margin: 10px;
+    // padding-top: -50px;
 
     &:hover {
       color: $color-secondary;

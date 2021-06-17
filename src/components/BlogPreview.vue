@@ -39,6 +39,13 @@ export default {
 .blog-preview {
   background-color: $color-white;
   cursor: pointer;
+  padding: 5%;
+  margin: 5%;
+
+  @media ($tablet-large-up) {
+    padding: 8%;
+    margin: 2%;
+  }
 
   &__title {
     font-size: 26px;

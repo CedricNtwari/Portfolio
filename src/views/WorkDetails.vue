@@ -2,9 +2,6 @@
   <div class="work-details">
     <GoBack />
     <div class="work-details__column">
-      <img class="work-details__image" alt="My work picture" :src="image" />
-    </div>
-    <div class="work-details__column">
       <h1 class="work-details__header">{{ work.title }}</h1>
       <span class="work-details__year">{{ work.year }}</span>
       <span class="work-details__subject">{{ work.subject }}</span>
@@ -38,7 +35,11 @@ export default {
 
 <style scoped lang="scss">
 .work-details {
-  margin: 10%;
+  margin: 5%;
+
+  @media ($tablet-large-up) {
+    margin: 10%;
+  }
 
   &__date {
     font-variant: small-caps;
@@ -46,6 +47,10 @@ export default {
 
   &__subject {
     font-variant: small-caps;
+  }
+
+  &__paragraph {
+    line-height: 2.1;
   }
 
   &__paragraph::first-letter {

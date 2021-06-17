@@ -46,6 +46,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .featured-works {
+  margin: 0 5%;
   @media ($tablet-large-up) {
     margin: 0 15%;
   }
@@ -59,7 +60,7 @@ export default {
     @media ($tablet-large-up) {
       font-size: 22px;
       font-weight: normal;
-      padding-top: 30px;
+      text-align: left;
       margin: 0;
     }
   }

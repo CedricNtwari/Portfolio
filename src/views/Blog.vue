@@ -37,7 +37,11 @@ export default {
 
 <style lang="scss">
 .blog {
-  margin: 10%;
+  margin: 5%;
+
+  @media ($tablet-large-up) {
+    margin: 10%;
+  }
 
   &__header {
     text-decoration: none;
@@ -57,6 +61,7 @@ export default {
   &__preview {
     padding-top: 10px;
     padding-bottom: 20px;
+    // margin: 0;
     &:after {
       display: inline-block;
       content: '';
