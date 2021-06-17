@@ -44,15 +44,19 @@ export default {
   }
 
   &__header {
-    text-decoration: none;
     font-size: 30px;
     padding-bottom: 20px;
     border-bottom: 1px solid $color-primary;
     width: 5%;
+    margin: 0;
 
     @media ($tablet-up) {
       font-size: 44px;
     }
+  }
+
+  &__header::after {
+    padding-bottom: 20px;
   }
 
   &__link {

@@ -104,7 +104,6 @@ export default {
 
   &__blog-preview {
     padding-right: 1%;
-    padding-bottom: 5%;
     padding-left: 1%;
 
     @media ($tablet-up) {
@@ -122,7 +121,6 @@ export default {
   &__preview-link {
     text-decoration: none;
     color: $color-dark;
-    // margin: 30px;
 
     &:hover {
       color: $color-secondary;
