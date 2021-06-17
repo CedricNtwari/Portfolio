@@ -37,10 +37,10 @@ export default {
 
 <style lang="scss">
 .blog {
-  margin: 5%;
+  margin: 0.1% 5%;
 
   @media ($tablet-up) {
-    margin: 7.5% 7% 7% 9.8%;
+    margin: 8% 10%;
   }
 
   &__header {
