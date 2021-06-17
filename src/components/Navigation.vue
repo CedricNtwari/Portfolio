@@ -27,13 +27,13 @@ export default {
   text-align: right;
 
   &__link {
-    font-size: 15px;
+    font-size: 18px;
     display: inline-block;
-    font-weight: bold;
+    font-weight: 700;
     color: $color-dark;
     text-decoration: none;
     padding-top: 20px;
-    padding-right: 20px;
+    padding-right: 26px;
     padding-bottom: 30px;
 
     &.router-link-exact-active {

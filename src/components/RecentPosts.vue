@@ -103,8 +103,7 @@ export default {
   }
 
   &__blog-preview {
-    padding-right: 1%;
-    padding-left: 1%;
+    padding: 1%;
 
     @media ($tablet-up) {
       padding: 1%;

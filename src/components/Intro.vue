@@ -67,7 +67,6 @@ export default {
 
   &__header {
     font-weight: bold;
-    letter-spacing: 2px;
     font-size: 44px;
     line-height: 60px;
     text-align: center;
