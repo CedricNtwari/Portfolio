@@ -67,9 +67,5 @@ export default {
       color: $color-secondary;
     }
   }
-
-  &__preview {
-    // padding-bottom: 0 !important;
-  }
 }
 </style>
