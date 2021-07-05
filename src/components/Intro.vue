@@ -37,10 +37,10 @@ export default {
     return {
       paragraph:
         'Passionate about the web and front-end development in particular. I write code for a living' +
-        'and I am also into open-source these days. Aside from coding I also help other developers' +
-        'during one-to-one session online. I am active in the local developers community in my home' +
-        'country Mauritius. I help organising meetups and speak there from time to time.',
-      cta: 'Download resume',
+        ' and I am also into open-source these days. Aside from coding I also help other developers' +
+        ' during one-to-one session online. I am active in the local developers community in my home' +
+        ' country Burundi. I help organising meetups and speak there from time to time.',
+      cta: 'Download Resume',
     }
   },
 }
@@ -50,27 +50,58 @@ export default {
 <!-- IE10 and down do not support flex -->
 <style scoped lang="scss">
 .intro {
-  margin: 15%;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  margin: 5%;
+  text-align: center;
+  padding-top: 40px;
 
-  @media (min-width: 768px) {
+  @media ($tablet-up) {
     display: flex;
     flex-direction: row-reverse;
+    margin-top: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    margin-left: 15%;
+    text-align: left;
+    padding: 0;
+  }
+
+  &__header {
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+
+    @media ($tablet-up) {
+      text-align: left;
+    }
+  }
+
+  &__paragraph {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align-last: center;
+
+    @media ($tablet-up) {
+      text-align-last: left;
+    }
   }
 
   &__column {
-    @media (min-width: 768px) {
+    @media ($tablet-up) {
       flex: 50%;
     }
   }
 
   &__button {
-    background-color: #ff7999;
+    background-color: $color-primary;
     border: none;
-    color: white;
+    color: $color-white;
     cursor: pointer;
     padding: 15px;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-family: 'Heebo', sans-serif;
   }
 
   &__image {

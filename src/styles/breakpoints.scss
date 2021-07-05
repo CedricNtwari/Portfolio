@@ -1,0 +1,6 @@
+@import './variables';
+
+$mobile-large-up: 'min-width: #{$breakpoint-mobile-large}';
+$tablet-up: 'min-width: #{$breakpoint-tablet}';
+$tablet-large-up: 'min-width: #{$breakpoint-tablet-large}';
+$desktop-up: 'min-width: #{$breakpoint-desktop}';

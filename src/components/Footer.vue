@@ -2,14 +2,14 @@
 <template>
   <div class="footer">
     <div class="footer__row">
-      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
       <a href="https://www.instagram.com/" target="_blank"
-        ><i class="fab fa-instagram fa-3x"></i
+        ><i class="fab fa-instagram fa-2x"></i
       ></a>
       <a href="https://twitter.com/?lang=en" target="_blank"
-        ><i class="fab fa-twitter fa-3x"></i
+        ><i class="fab fa-twitter fa-2x"></i
       ></a>
-      <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+      <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
     </div>
 
     <div class="footer__row">
@@ -46,7 +46,7 @@ export default {
   .fa-twitter,
   .fa-linkedin {
     text-decoration: none;
-    color: black;
+    color: $color-dark;
     padding: 5px;
     margin: 5px;
     cursor: pointer;
@@ -56,7 +56,11 @@ export default {
   .fa-instagram:hover,
   .fa-twitter:hover,
   .fa-linkedin:hover {
-    color: #1e81b0;
+    color: $color-secondary;
+  }
+
+  &__copyright {
+    font-size: 14px;
   }
 }
 </style>

@@ -35,7 +35,11 @@ export default {
 
 <style scoped lang="scss">
 .blog-details {
-  margin: 10%;
+  margin: 5%;
+
+  @media ($tablet-large-up) {
+    margin: 10%;
+  }
 
   &__date {
     font-variant: small-caps;
@@ -45,9 +49,13 @@ export default {
     font-variant: small-caps;
   }
 
+  &__paragraph {
+    line-height: 2.1;
+  }
+
   &__paragraph::first-letter {
     font-size: 200%;
-    color: #ff7999;
+    color: $color-primary;
   }
 }
 </style>

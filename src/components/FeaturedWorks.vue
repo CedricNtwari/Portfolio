@@ -46,21 +46,30 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .featured-works {
-  margin: 0 15% 0 15%;
+  margin: 0 5%;
+
+  @media ($tablet-up) {
+    margin: 0 15%;
+  }
 
   &__header {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
-      Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    padding: 20px 0;
+    text-align: center;
+    font-size: 22px;
+    font-weight: normal;
+    padding-top: 30px;
+    margin: 0;
+
+    @media ($tablet-up) {
+      text-align: left;
+    }
   }
 
   &__link {
     text-decoration: none;
-    color: #000000;
+    color: $color-dark;
 
     &:hover {
-      color: #1e81b0;
+      color: $color-secondary;
     }
   }
 }

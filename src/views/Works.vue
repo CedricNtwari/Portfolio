@@ -40,14 +40,31 @@ export default {
 </script>
 <style lang="scss">
 .works {
-  margin: 10%;
+  margin: 5%;
+
+  @media ($tablet-up) {
+    margin: 10%;
+  }
+
+  &__header {
+    font-size: 30px;
+    border-bottom: 1px solid $color-primary;
+    width: 5%;
+    padding-bottom: 20px;
+    margin: 0;
+
+    @media ($tablet-up) {
+      font-size: 44px;
+    }
+  }
 
   &__link {
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.893);
+    color: $color-dark;
+    padding-top: 0 !important;
 
     &:hover {
-      color: #1e81b0;
+      color: $color-secondary;
     }
   }
 }

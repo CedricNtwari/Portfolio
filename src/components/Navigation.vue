@@ -22,36 +22,31 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .navigation {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: right;
 
   &__link {
-    display: none;
+    font-size: 18px;
+    display: inline-block;
+    font-weight: 700;
+    color: $color-dark;
+    text-decoration: none;
+    padding-top: 20px;
+    padding-right: 26px;
+    padding-bottom: 30px;
 
     &.router-link-exact-active {
-      color: #ff7999;
+      color: $color-primary;
     }
 
-    @media (min-width: 768px) {
-      display: inline;
-      font-weight: bold;
-      color: #2c3e50;
-      text-decoration: none;
-      padding: 20px 40px 0 0;
+    @media ($tablet-up) {
+      font-size: 20px;
     }
   }
 
   &__icon {
-    display: inline-block;
-    width: 30px;
-    height: 10px;
-    border-top: 4px solid black;
-    border-bottom: 4px solid black;
-    cursor: pointer;
-
-    @media (min-width: 768px) {
+    @media ($tablet-up) {
       display: none;
     }
   }

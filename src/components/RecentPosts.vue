@@ -69,47 +69,60 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .recent-posts {
-  background-color: #dbeef1;
-  height: auto;
+  background-color: $color-background;
 
   &__header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 15% 0 15%;
+    text-align: center;
+    padding-top: 20px;
+
+    @media ($tablet-large-up) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 15%;
+      padding-left: 15%;
+      padding-top: 30px;
+    }
   }
 
   &__title {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: normal;
+    margin: 0;
   }
 
   &__link {
-    text-decoration: none;
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+    visibility: hidden;
+
+    @media ($tablet-large-up) {
+      visibility: visible;
+      text-decoration: none;
+      font-size: 16px;
+      color: $color-secondary;
+    }
   }
 
   &__blog-preview {
-    padding: 0 15% 5% 15%;
+    padding: 1%;
 
-    @media (min-width: 768px) {
+    @media ($tablet-up) {
+      padding: 1%;
+    }
+    @media ($tablet-large-up) {
       display: flex;
       flex-direction: row;
+      padding-right: 14%;
+      padding-bottom: 5%;
+      padding-left: 14%;
     }
   }
 
   &__preview-link {
     text-decoration: none;
-    color: #000000;
-    margin: 10px;
-
-    @media (min-width: 768px) {
-      margin: 0 10px 0 0;
-    }
+    color: $color-dark;
 
     &:hover {
-      color: #1e81b0;
+      color: $color-secondary;
     }
   }
 }

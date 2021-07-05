@@ -13,6 +13,7 @@
       </p>
     </div>
   </div>
+  <div class="work-preview__line"></div>
 </template>
 
 <script>
@@ -49,47 +50,69 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .work-preview {
-  padding: 0 0 20px 0;
+  padding-bottom: 20px;
+  padding-top: 35px;
 
-  @media (min-width: 1024px) {
+  @media ($tablet-large-up) {
     display: flex;
     flex-direction: row;
   }
 
   &__column {
-    padding: 0 20px 0 0;
+    padding-right: 30px;
+  }
+
+  &__header {
+    @media ($tablet-up) and ($tablet-large-up) {
+      font-size: 26px;
+      padding-bottom: 20px;
+      margin: 0;
+      padding-top: 0;
+    }
   }
 
   &__image {
     width: 100%;
-    height: 300px;
-    border-radius: 7%;
+    height: 200px;
+    border-radius: 6px;
 
-    @media (min-width: 768px) {
+    @media ($tablet-up) {
       width: 300px;
     }
   }
 
-  &__date {
-    padding-right: 40px;
-    font-size: 15px;
+  &__year {
+    font-size: 18px;
+    background-color: $color-dark;
+    color: $color-white;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 16px;
   }
 
   &__subject {
-    padding-left: 40px;
-    font-size: 15px;
-    color: grey;
+    padding-left: 30px;
+    font-size: 20px;
+    color: $color-light;
   }
 
-  &::after {
-    display: inline-block;
-    content: '';
-    border-top: 1px solid lightgray;
-    width: 100%;
-
-    @media (min-width: 1024px) {
-      display: none;
-    }
+  &__paragraph {
+    font-size: 16px;
+    line-height: 1.6;
+    padding-top: 10px;
   }
+}
+
+.work-preview:hover {
+  .work-preview__subject,
+  .work-preview__year {
+    color: $color-secondary;
+  }
+}
+
+.work-preview__line {
+  content: '';
+  border-top: 1px solid $color-line-break;
+  width: 100%;
 }
 </style>

@@ -65,18 +65,29 @@ export default {
 
 <style lang="scss">
 .contact {
-  margin: 5% 20%;
+  margin: 5%;
 
-  &__header::after {
-    display: inline-block;
-    content: '';
-    border-bottom: 1px solid lightgray;
-    width: 100%;
+  @media ($tablet-up) {
+    margin: 10%;
+  }
+
+  &__header {
+    border-bottom: 1px solid $color-primary;
+    width: 5%;
+    padding-bottom: 20px;
+    font-size: 30px;
+    margin: 0;
+
+    @media ($tablet-up) {
+      font-size: 44px;
+    }
   }
 
   &__title {
-    color: gray;
+    color: $color-light;
     font-size: 15px;
+    position: relative;
+    top: -3px;
   }
 
   &__label {
@@ -84,20 +95,20 @@ export default {
 
     &::after {
       content: '*';
-      color: red;
+      color: $color-red;
       font-weight: bold;
     }
   }
 
   &__input {
-    height: 35px;
+    height: 50px;
     width: 100%;
     margin-bottom: 20px;
     outline: 0;
     border-width: 0 0 1px;
 
     &:focus {
-      border-color: #ff7999;
+      border-color: $color-primary;
     }
   }
 
@@ -108,20 +119,21 @@ export default {
     margin-top: 10px;
 
     &:focus {
-      border-color: #ff7999;
+      border-color: $color-primary;
     }
   }
 
   &__error {
-    color: red;
+    color: $color-red;
   }
 
   &__button {
     margin-top: 30px;
     padding: 10px;
-    background-color: #ff7999;
-    color: white;
+    background-color: $color-primary;
+    color: $color-white;
     border: none;
+    font-family: 'Heebo', sans-serif;
   }
 }
 </style>

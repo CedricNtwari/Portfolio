@@ -37,30 +37,45 @@ export default {
 
 <style lang="scss">
 .blog {
-  margin: 10%;
+  margin: 5%;
+
+  @media ($tablet-up) {
+    margin: 10%;
+  }
 
   &__header {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    padding-left: 38px;
+    font-size: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $color-primary;
+    width: 5%;
+    margin: 0;
+
+    @media ($tablet-up) {
+      font-size: 44px;
+    }
+  }
+
+  &__header::after {
+    padding-bottom: 20px;
   }
 
   &__link {
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.893);
+    color: $color-dark;
 
     &:hover {
-      color: #1e81b0;
+      color: $color-secondary;
     }
   }
 
   &__preview {
-    margin: 20px;
-    padding: 20px;
+    margin: 0 !important;
+    padding: 0 !important;
 
     &:after {
       display: inline-block;
       content: '';
-      border-top: 1px solid lightgray;
+      border-top: 1px solid $color-line-break;
       width: 100%;
     }
   }
