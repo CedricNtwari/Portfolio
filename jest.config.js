@@ -1,12 +1,7 @@
-// jest.config.js
-// Sync object
 module.exports = {
-  verbose: true,
-}
-
-// Or async function
-module.exports = async () => {
-  return {
-    verbose: true,
-  }
+  moduleFileExtensions: ['js', 'json', 'vue'],
+  transform: {
+    '^.+\\.vue$': 'vue-jest',
+    '^.+\\.jsx?$': 'babel-jest',
+  },
 }
