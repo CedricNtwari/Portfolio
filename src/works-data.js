@@ -1,8 +1,7 @@
 export const works = [
   {
     id: '1',
-    image:
-      'https://3tllv348mk0t1s188m2qazuj-wpengine.netdna-ssl.com/wp-content/uploads/2020/04/GA-dash-v2-1024x539.jpg',
+    image: 'https://i.pinimg.com/236x/7a/fb/b0/7afbb021606b85e51049b3968bedfe5b.jpg',
     title: 'Designing Dashboard',
     year: '2020',
     subject: 'Dashboard',
